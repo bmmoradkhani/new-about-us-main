@@ -1,0 +1,267 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../../public/assets/fonts/poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: Cal Sans;
+  src: url("../../public/assets/fonts/cal-sans/CalSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../../public/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+.main {
+  border: 1px solid #000;
+  background: linear-gradient(180deg, #fcf7f4 100%, #fff 100%);
+
+  padding-top: 90px;
+  min-height: 80vh;
+
+  padding-bottom: 204px;
+}
+
+.ourMission_Text {
+  color: #d6635b;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 200% */
+  letter-spacing: 3px;
+  padding-top: 85px;
+}
+
+.storeTitle {
+  color: #2a438f;
+  text-align: center;
+  font-family: Cal Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 107.692% */
+  margin-top: 35px;
+}
+
+.storeTitle_Text {
+  width: 1014.736px;
+}
+
+.numberTitle {
+  color: rgba(42, 67, 143, 0.85);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 200% */
+  letter-spacing: 0.9px;
+  padding-top: 85px;
+}
+
+.numberBox {
+  margin-top: 39px;
+  width: 100%; /* 1440.782px */
+  height: 174.715px;
+
+  background: #35498b;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.numberBox_Title {
+  color: #fdf5e2;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 0 65px;
+  text-align: center;
+}
+
+.numberBox_Title span:last-child {
+  color: #f3f3f3;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numberBox_Title_Hours {
+  font-size: 35px !important;
+}
+
+.numberLine {
+  width: 1px;
+  height: 101.6px;
+  background: #f3f3f3;
+}
+
+@media screen and (min-width: 998px) and (max-width: 1199.98px) {
+  .about_Persifund h2,
+  .about_Persifund_span {
+    font-size: 55px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 997.98px) {
+  .about_Persifund h2,
+  .about_Persifund_span {
+    font-size: 40px !important;
+  }
+}
+
+.about_Persifund h2 {
+  color: #2a438f;
+  // text-align: center;
+  font-family: Cal Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 107.692% */
+  padding: 0 63px;
+}
+
+.about_Persifund_span {
+  background: linear-gradient(90deg, #7a00d0 12.5%, #ef007e 83.33%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Cal Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.about_Persifund_Context p {
+  color: rgba(42, 67, 143, 0.85);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.my_container {
+  margin-right: 93.64px;
+  margin-left: 95.74px;
+}
+
+.centerTitle {
+  color: #2a438f;
+  text-align: center;
+  font-family: Cal Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 107.692% */
+  margin-top: 10%;
+  margin-bottom: 16%;
+}
+
+.icon {
+  margin-top: -7%;
+}
+
+.efficiency_Title {
+  color: #2a438f;
+  text-align: center;
+  font-family: Cal Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 155.556% */
+  // padding-left:  328px !important;
+  position: relative;
+  left: 11.5% !important;
+}
+
+.efficiency_context {
+  color: rgba(42, 67, 143, 0.85);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 399.853px;
+  position: relative;
+  right: 8.9%;
+}
+
+.lineIcon_Energy {
+  margin: 0 20px;
+  width: 2px;
+  height: 268.468px;
+  background: linear-gradient(88deg, #2a438f 25%, rgba(252, 247, 245, 0) 100%);
+}
+
+.Icon_Energy {
+  margin-left: -8px;
+  width: 60px;
+  height: 60px;
+  background: #2a438f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_seamless {
+  margin-top: -7%;
+}
+
+.lineIcon_Energy_seamless {
+  width: 2px;
+  height: 268.468px;
+  background: linear-gradient(88deg, #2a438f 25%, rgba(252, 247, 245, 0) 100%);
+  margin: 0 20px;
+}
+
+.Icon_Energy_seamless {
+  margin-left: -28px;
+  width: 60px;
+  height: 60px;
+  background: #2a438f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8px;
+}
+
+// .seamless{}
+
+.seamless_Title {
+  color: #2a438f;
+  text-align: center;
+  font-family: Cal Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.seamless_context {
+  color: rgba(42, 67, 143, 0.85);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 399.853px;
+}
