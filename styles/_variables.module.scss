@@ -1,0 +1,70 @@
+$primary-color: #3d5698;
+$primary-text-color: #fff;
+$section-color: #1d1d1f;
+$background-color: #f1f1f1;
+$secondary-background-color: #fcf7f4;
+$title-background-color: #7fc4b5;
+$service-title-color: #7fc4b5;
+$title-font-size: 3rem;
+$poppins-Light: "Poppins-Light";
+$poppins-SemiBold: "Poppins-SemiBold";
+$CalSans-SemiBold: "CalSans-SemiBold";
+$header-height: 90px;
+$title-color: #fdf5e2;
+
+// responsive variable
+$container-sm: 4vw;
+$fluid-container-md: 5px;
+
+// BUTTON
+@mixin buttonStyle($x, $borderColor) {
+  font-size: 2 * $x;
+  padding: 2 * $x 4 * $x;
+  border-radius: 3 * $x $x 3 * $x $x;
+  // border:none ;
+  border: 1px solid $borderColor;
+  color: #fff;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-radius: 24px;
+  }
+}
+
+@mixin menuHover {
+  &:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 100%;
+    top: 0px;
+    background: #d6635b;
+    transition: transform 0.5s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+
+  &:hover:after {
+    width: 100%;
+    transform: scaleX(1);
+  }
+}
+
+@mixin marginLeft {
+  margin-left: 50px;
+}
+
+@mixin carouselStyleInMobile($left) {
+  left: $left;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  margin-left: 0;
+}
+
+@media (max-width: 992px) {
+  @mixin marginLeft {
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,139 @@
+@import "../../styles/variables.module";
+
+.return_page {
+  background: linear-gradient(180deg, #f3f3f3 0%, #ffffff 100%);
+  padding-top: 85px;
+
+  .header_title {
+    font-size: 53px;
+    font-family: $CalSans-SemiBold;
+    padding-bottom: 69px;
+
+    .return_word {
+      color: #ee6698;
+      display: inline-block;
+      padding-left: 10px;
+    }
+  }
+
+  .description {
+    font-size: 20px;
+    font-family: $poppins-Light;
+    padding-bottom: 154px;
+    width: 500px;
+  }
+
+  .return_info {
+    background: #19143d;
+    color: #fff;
+    padding: 67px 81px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: $poppins-Light;
+    margin-top: 50px;
+    // padding-right: 90px !important;
+
+    .return_info_description {
+      display: inline-block;
+      padding-right: 80px;
+    }
+  }
+
+  .journey {
+    padding-top: 123px;
+
+    .journey_title {
+      font-size: 70px;
+      font-family: $CalSans-SemiBold;
+      text-align: center;
+      color: #010160;
+    }
+
+    .journey_button {
+      border-radius: 40px;
+      border: 1px solid #000;
+      padding: 30px;
+      display: inline-block;
+      cursor: pointer;
+      // background: #737ABA;
+      color: #fff;
+
+      .journey_button:first-child {
+        padding-bottom: 18px;
+      }
+    }
+
+    .step_container {
+      margin-top: 250px;
+    }
+
+    .step_container:last-child {
+      margin-bottom: 150px;
+    }
+
+    .card_left {
+      border-radius: 115px 50px;
+      // background: linear-gradient(130.4deg, rgba(82, 0, 63, 0.6) 5.5%, rgba(103, 5, 139, 0.6) 51.05%, rgba(38, 0, 107, 0.6) 94.66%);
+      box-shadow: inset 0px 0px 50px rgba(114, 168, 138, 0.2);
+      text-align: center;
+      padding-top: 54px;
+      padding-bottom: 54px;
+      max-width: 595px;
+      margin-right: auto;
+      margin-left: auto;
+      height: 500px;
+      width: 520px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .step_title {
+        padding-left: 50px;
+      }
+
+      .step_description {
+        padding-left: 50px;
+      }
+    }
+
+    .card_right {
+      border-radius: 115px 50px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      background: linear-gradient(
+        130.4deg,
+        rgba(82, 0, 63, 0.6) 5.5%,
+        rgba(103, 5, 139, 0.6) 51.05%,
+        rgba(38, 0, 107, 0.6) 94.66%
+      );
+      box-shadow: inset 0px 0px 50px rgba(114, 168, 138, 0.2);
+      text-align: center;
+      padding-top: 54px;
+      padding-bottom: 54px;
+      max-width: 595px;
+      // margin-right: auto;
+      // margin-left: auto;
+      // margin-top: auto;
+      margin: auto;
+      height: 500px;
+      width: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step_title {
+      font-family: $CalSans-SemiBold;
+      font-size: 40px;
+      color: #010160;
+      margin-bottom: 20px;
+      padding-left: 50px;
+    }
+
+    .step_description {
+      font-family: $poppins-Light;
+      font-size: 20px;
+      color: #010160;
+      padding-left: 50px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# firebase
+.firebase
+
+#build
+.next
+out
+
+#node_modules
+node_modules

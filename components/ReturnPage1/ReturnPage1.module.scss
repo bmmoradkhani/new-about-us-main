@@ -1,0 +1,743 @@
+@import "../../styles/variables.module";
+
+@media screen and (max-width: 575.98px) {
+  .marginTop {
+    margin-top: 85px;
+  }
+
+  .titleH1 {
+    font-size: 45px !important;
+  }
+
+  .vector {
+    bottom: 35% !important;
+    right: 5% !important;
+  }
+
+  .vector img {
+    width: 500px;
+    height: 80px;
+  }
+
+  .factor img {
+    width: 170px;
+    height: 200px;
+  }
+
+  .twoTitleBusiness {
+    font-size: 46px !important;
+  }
+
+  .threeTitle {
+    font-size: 38px !important;
+  }
+
+  .explore {
+    font-size: 40px !important;
+    margin: 120px 0 !important;
+  }
+
+  .oneTitleBusiness {
+    font-size: 44px !important;
+  }
+
+  .barChart {
+    bottom: 34% !important;
+    left: 5% !important;
+  }
+
+  .barChartBusiness {
+    bottom: 34% !important;
+    left: 5% !important;
+  }
+
+  .twoTitle {
+    font-size: 38px !important;
+  }
+
+  .rowTitle span {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .CenterMain {
+    margin-top: 250px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .businessFactor {
+    margin-top: 100px;
+  }
+  .brandName {
+    flex-direction: column-reverse;
+  }
+  .rowTitle {
+    font-size: 28px !important;
+    padding: 0 !important;
+  }
+
+  .rowTitle span {
+    font-size: 16px !important;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .payment {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .twoComment {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .vectorBusinessImg {
+    width: 95.27%;
+    height: 135px;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 576px) {
+  .titleH1 {
+    font-size: 55px !important;
+  }
+
+  .vector {
+    position: relative !important;
+    bottom: 60% !important;
+  }
+
+  .vectorImg {
+    height: 100px !important;
+  }
+
+  .barChart {
+    position: relative !important;
+    bottom: 70% !important;
+  }
+
+  .barChartBusiness {
+    bottom: 70%;
+  }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 576px) {
+  .twoTitle {
+    font-size: 42px !important;
+  }
+
+  .threeTitle {
+    font-size: 44px !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 768px) {
+  .titleH1 {
+    font-size: 65px !important;
+  }
+
+  .vector {
+    bottom: 56% !important;
+  }
+
+  .barChartBusiness {
+    bottom: 70%;
+  }
+
+  .rankText p {
+    margin: 0 5% !important;
+  }
+
+  .barChart {
+    position: relative !important;
+    bottom: 70% !important;
+  }
+  .rowTitle {
+    font-size: 40px !important;
+    padding: 0 !important;
+  }
+  .rowTitle span {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .barChart {
+    position: relative !important;
+    bottom: 96% !important;
+    margin: 0 !important;
+  }
+
+  .vectorBusinessImg {
+    width: 91.27%;
+    height: 155px;
+  }
+  .barChartBusiness {
+    bottom: 100%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1199.98px) and (min-width: 992px) {
+  .titleH1 {
+    font-size: 75px !important;
+  }
+
+  .rowTitle {
+    font-size: 55px !important;
+    padding: 10px !important;
+  }
+  .rowTitle span {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .rowTitle {
+    font-size: 60px !important;
+    padding: 0 50px !important;
+  }
+  .rowTitle span {
+    font-size: 17px !important;
+  }
+}
+
+@media screen and (min-width: 3500px) {
+  .titleH1 {
+    font-size: 150px !important;
+  }
+
+  .SubTitleText {
+    font-size: 70px !important;
+  }
+
+  .rankText p {
+    font-size: 30px !important;
+  }
+
+  .manageReturns img {
+    width: 700px !important;
+    height: 500px !important;
+  }
+
+  .oneTitle {
+    font-size: 130px !important;
+  }
+  .oneComment {
+    font-size: 55px !important;
+  }
+
+  .payment img {
+    width: 700px !important;
+    height: 500px !important;
+  }
+
+  .twoTitle {
+    font-size: 120px !important;
+  }
+
+  .twoComment {
+    font-size: 60px !important;
+  }
+
+  .threeTitle {
+    font-size: 130px !important;
+  }
+
+  .threeComment {
+    font-size: 60px !important;
+  }
+
+  .factor img {
+    width: 600px !important;
+    height: 660px !important;
+  }
+
+  .percent {
+    margin-top: 400px !important;
+  }
+}
+
+.firstRow {
+  margin-top: 250px !important;
+}
+
+.paddingTop {
+  padding-top: 200px;
+}
+
+.titleH1 {
+  color: #000;
+  font-size: 90px;
+  font-family: Cal Sans;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.titleH1 span {
+  background: linear-gradient(to right, #ee007f -29%, #7500d3 48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.SubTitle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+}
+
+.SubTitleText {
+  display: flex;
+  flex-direction: column;
+  color: #000206;
+  text-align: center;
+  font-size: 35px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.rankText {
+  width: 679px;
+  height: 174px;
+}
+
+.persifund1 {
+  position: relative;
+  bottom: 5px;
+  right: 14%;
+}
+
+.persifund2 {
+  position: relative;
+  bottom: 15px;
+  right: 9.4%;
+}
+
+.persifund3 {
+  position: relative;
+  bottom: 31px;
+  right: 4.7%;
+}
+
+.persifund4 {
+  position: relative;
+  bottom: 50px;
+}
+
+.persifundBusiness {
+  position: relative;
+  bottom: 58px;
+  left: 4%;
+}
+
+.percent {
+  height: 163.015px;
+  border: 1px solid #eaeaea;
+  background: #fafafa;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+}
+
+.rowTitle {
+  color: #000;
+  font-size: 65px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 65px;
+  text-align: center;
+}
+
+.rowTitle span {
+  color: #616161;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentLine {
+  width: 1px;
+  height: 106.821px;
+  background: #000;
+}
+
+.explore {
+  color: #00003e;
+  font-size: 70px;
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 160px 0;
+  text-align: center;
+}
+
+.shopifyAppStoreBox {
+  width: 100%;
+  margin: 50px 0 140px 0;
+}
+
+.shopifyAppStore {
+  width: 254.473px;
+  height: 66.5px;
+  flex-shrink: 0;
+  background-color: #000000;
+  border-radius: 8px;
+}
+
+.shopifyAppStoreTitle {
+  position: relative;
+  top: 4px;
+  left: 60px;
+  display: inline;
+  color: #fff;
+  text-align: center;
+  font-size: 9px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.shopifyAppStoreImg {
+  width: 225.05px;
+  height: 39.482px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 11px;
+}
+
+.vector {
+  position: relative;
+  width: 100%;
+  bottom: 75%;
+}
+
+.vectorImg {
+  width: 92%;
+  height: 125px;
+}
+
+.barChart {
+  position: relative;
+}
+
+.barChartBusiness {
+  position: relative;
+}
+
+.customer {
+  background: linear-gradient(to right, #7a00d0 25%, #ef007e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-family: Cal Sans;
+  font-weight: 600;
+}
+
+.customer2 {
+  background: linear-gradient(to right, #7a00d0 25%, #ef007e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.business {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  color: #010160;
+}
+
+.business2 {
+  font-size: 32px;
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(
+      0deg,
+      rgba(112, 112, 112, 0.5),
+      rgba(112, 112, 112, 0.5)
+    ),
+    linear-gradient(
+      90.09deg,
+      rgba(122, 0, 208, 0.3) 21.51%,
+      rgba(239, 0, 126, 0.3) 83.94%
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.customerBox {
+  width: 54.254px;
+  height: 54.254px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #7300d4 0%, #ef007e 100%);
+}
+
+.customerIcon {
+  text-align: center;
+  cursor: pointer;
+}
+
+.leftCustomer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 21px;
+  top: 5px;
+}
+
+.businessBox {
+  width: 54.254px;
+  height: 54.254px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #004fc5 0%, #ff76f1 170%);
+}
+
+.businessBoxStyle {
+  width: 54.254px;
+  height: 54.254px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #005f4b 0%, #95dfcc 170%);
+}
+
+.businessIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 13px;
+  cursor: pointer;
+}
+
+.rightBusiness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 17px;
+  top: 24.8px;
+}
+
+.oneTitle {
+  color: #010160;
+  font-size: 50px;
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  bottom: 47px;
+  justify-content: center;
+}
+
+.oneComment {
+  color: #010160;
+  font-size: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+}
+
+.manageReturns img {
+  width: 425.892px;
+  height: 284.448px;
+}
+
+.twoTitle {
+  position: relative;
+  bottom: 43px;
+  color: #010160;
+  font-size: 46px;
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.twoComment {
+  color: #010160;
+  font-size: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: center;
+}
+
+.paymentImg {
+  justify-content: center;
+  align-items: center;
+}
+
+.payment img {
+  width: 402.815px;
+  height: 267.707px;
+}
+
+.threeTitle {
+  position: relative;
+  bottom: 46px;
+  color: #010160;
+  font-size: 50px;
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+}
+
+.threeComment {
+  color: #010160;
+  font-size: 19px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+}
+
+.factor {
+  justify-content: center;
+  align-items: center;
+}
+
+.factor img {
+  width: 300px;
+  height: 330px;
+}
+
+.marginBottom {
+  margin-bottom: 300px;
+}
+
+//  this is a business journey styles .... //
+
+.oneTitleBusiness,
+.oneCommentBusiness,
+.twoTitleBusiness,
+.twoCommentBusiness,
+.threeTitleBusiness,
+.threeCommentBusiness {
+  font-style: normal;
+  line-height: normal;
+}
+
+.oneTitleBusiness {
+  color: #010160;
+  text-align: center;
+  font-size: 50px;
+  font-family: Cal Sans;
+  font-weight: 600;
+}
+
+.oneCommentBusiness {
+  color: #010160;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  justify-content: center;
+}
+
+.exchange img {
+  width: 293.358px;
+  height: 388.866px;
+  border-radius: 10px;
+}
+
+.brandNameImg {
+  justify-content: center;
+}
+
+.brandNameImg img {
+  width: 309.76px;
+  height: 407.508px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.twoTitleBusiness {
+  color: #010160;
+  text-align: center;
+  font-size: 46px;
+  font-family: Cal Sans;
+  font-weight: 600;
+}
+
+.twoCommentBusiness {
+  color: #010160;
+  text-align: center;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  justify-content: center;
+}
+
+.threeTitleBusiness {
+  color: #010160;
+  text-align: center;
+  font-size: 50px;
+  font-family: Cal Sans;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.threeCommentBusiness {
+  color: #010160;
+  text-align: center;
+  font-size: 19px;
+  font-family: Poppins;
+  font-weight: 400;
+  justify-content: center;
+}
+
+.businessFactor {
+  justify-content: center;
+}
+
+.businessFactorImg {
+  width: 300px;
+  height: 330px;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 3px 2px 17px 40px rgba(0, 0, 0, 0.25);
+}
+
+.businessFactor img {
+  width: 300px;
+  height: 330px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 35px whitesmoke;
+}

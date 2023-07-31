@@ -1,0 +1,149 @@
+@import "../../styles/variables.module";
+
+.content {
+  // background: url(../../../public/assets/images/integrates.svg);
+  // background-repeat:no-repeat;
+  // background-position: center;
+  background: radial-gradient(
+    137.99% 144.08% at 0% 100%,
+    #2d64a3 0%,
+    #1b3263 35.73%,
+    #0e1742 56.31%,
+    #0b1039 69.17%,
+    #11123b 84.86%,
+    #2d1a43 100%
+  );
+  // border-radius: 25px;
+  // width:100%;
+  // margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  // padding-top:126px;
+  height: max-content;
+  // min-height: 34rem;
+  position: relative;
+  padding-left: 100px;
+  font-family: $poppins-Light;
+
+  h1 {
+    color: #fff;
+    padding-top: 100px;
+    font-size: 3.6vw;
+    font-weight: 600;
+    font-family: $CalSans-SemiBold;
+  }
+
+  p {
+    color: #bebebe;
+    padding-top: 60px;
+    font-size: 15px;
+    padding-bottom: 100px;
+    font-size: 20px;
+  }
+}
+
+.loptop {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  // height: auto;
+  // width: 60vw;
+  // width: 60vw;
+  // height: auto
+
+  width: auto;
+  height: 100%;
+  // min-height: 30vh;
+}
+
+.connect_store_button {
+  @include buttonStyle(7.5px, #d6635b);
+  background: #d6635b;
+  padding-right: 100px !important;
+  padding-left: 100px !important;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.integration_brands_for_mobile {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+}
+
+.integration_main_for_mobile {
+  position: absolute;
+  right: 0;
+  // top:185px;
+  bottom: 0px;
+  width: 80vw;
+}
+
+.call_to_action {
+  border-radius: 45px;
+  background: #bcdad9;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  .title {
+    font-size: 55px;
+    font-weight: 600;
+    color: #0a2162;
+    font-family: $CalSans-SemiBold;
+  }
+
+  .description {
+    font-size: 25px;
+    color: #0a2162;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.integrates_container {
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-left: 30px;
+    font-size: 20px;
+    padding-top: 0 !important;
+    width: 100vw;
+
+    p {
+      padding-top: 50px;
+      padding-bottom: 50px !important;
+    }
+    h1 {
+      padding-top: 50px;
+
+      font-size: 30px !important;
+    }
+  }
+
+  .call_to_action {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .title {
+      font-size: 30px !important;
+      margin-bottom: 30px;
+    }
+  }
+
+  .connect_store_button {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .integrates_container {
+    margin-top: 50px;
+  }
+}

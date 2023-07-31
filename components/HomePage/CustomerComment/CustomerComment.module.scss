@@ -1,0 +1,119 @@
+@import "../../../styles//variables.module";
+
+.customer_comment {
+  padding-top: 160px;
+  padding-bottom: 130px;
+  background-color: $background-color;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.11);
+  border-radius: 25px;
+  margin-top: 46px;
+  margin-bottom: 46px;
+
+  .title {
+    font-size: 65px;
+    font-family: $CalSans-SemiBold;
+    // text-align: center;
+    // padding-top:5rem;
+    // padding-bottom: 6rem;
+    transform: rotate(-90deg);
+    color: #102d7e;
+  }
+
+  .slides {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+
+    position: relative;
+    opacity: 1;
+    -webkit-animation: fadeinout linear forwards;
+    animation: fadeInOut 4s linear 1 forwards;
+
+    @keyframes fadeinout {
+      //   0%,100% { opacity: 0; }
+      //   10% {opacity:0.7;}
+      //   90% {opacity:0.7;}
+      //   50% { opacity: 1; }
+      0% {
+        opacity: 0;
+      }
+      5% {
+        opacity: 0.6;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      15% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeinout {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+    }
+
+    &::-webkit-scrollbar {
+      background: transparent;
+      /* Chrome/Safari/Webkit */
+      width: 0px;
+    }
+  }
+
+  .circle_box {
+    margin-top: 20px;
+  }
+
+  .circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid #60ac99;
+    margin-right: 14.8px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .activeCircle {
+    display: inline-block;
+    height: 11px;
+    width: 36.77px;
+    background-color: #60ac99;
+    border: 1px solid #60ac99;
+    border-radius: 30px;
+    cursor: auto;
+    margin-right: 14.8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .customer_comment {
+    padding-top: 60px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+
+    .title {
+      font-size: 10vw;
+      padding-right: 6vw;
+      padding-left: 6vw;
+      transform: rotate(0);
+      text-align: center;
+      margin-bottom: 15vw;
+    }
+  }
+}
