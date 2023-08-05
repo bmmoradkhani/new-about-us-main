@@ -83,7 +83,7 @@
   text-align: center;
 }
 
-.numberBox_Title span:last-child {
+.numberBox_Title_span {
   color: #f3f3f3;
   text-align: center;
   font-family: Inter;
@@ -147,7 +147,7 @@
     font-style: 26px !important;
   }
 
-  .numberBox_Title span:last-child {
+  .numberBox_Title_span {
     font-size: 14px !important;
   }
 }
@@ -180,7 +180,7 @@
     font-size: 26px !important;
   }
 
-  .numberBox_Title span:last-child {
+  .numberBox_Title_span {
     font-size: 14px !important;
   }
 
@@ -674,3 +674,86 @@
 //   stroke-width: 2px;
 //   stroke: #7cbca9;
 // }
+
+@media screen and (min-width: 1400px) {
+  .about_Persifund_Context {
+    width: 626.364px !important;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .my_Container {
+    margin-right: 40.18px;
+    margin-left: 40.18px;
+  }
+
+  .ourMission_Text {
+    color: #d6635b;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 200% */
+    letter-spacing: 1.5px;
+  }
+
+  .storeTitle {
+    font-size: 40px !important;
+    line-height: 60px !important; /* 150% */
+  }
+
+  .storeTitle_Text {
+    width: 337.936px !important;
+  }
+
+  .numberBox {
+    display: block !important;
+    height: 776.685px !important;
+  }
+
+  .numberBox_Title {
+    padding: 45px 0 !important;
+    font-size: 58px !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-size: 32px !important;
+  }
+
+  .numberLine {
+    width: 143.361px;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .about_Persifund h2 {
+    font-size: 45px !important;
+  }
+
+  .about_Persifund_span {
+    font-size: 45px !important;
+  }
+
+  .about_Persifund_Context {
+    text-align: center !important;
+    font-size: 16px !important;
+    line-height: 28px; /* 175% */
+  }
+
+  .icon {
+    display: block !important;
+  }
+
+  .lineIcon_Energy {
+    width: 2px !important;
+    height: 48.867px !important;
+    margin: 0 auto !important;
+  }
+
+  .Icon_Energy {
+    margin: 0 auto !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+}

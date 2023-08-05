@@ -13,6 +13,45 @@ import shopify from "../../public/assets/images/about-us/unnamed.png";
 // import shopify from "../../public/assets/images/about-us/shopify.png";
 import vector from "../../public/assets/images/about-us/Vector.png";
 
+import CounterNew from "./CounterNew";
+
+const data_hours = [
+  {
+    startNum: 1,
+    endNum: 50,
+    duration: 4,
+    delay: 2,
+  },
+];
+
+const data_reduce = [
+  {
+    startNum: 1,
+    endNum: 70,
+    duration: 4,
+    delay: 2,
+  },
+];
+
+const data_save_Logistics = [
+  {
+    startNum: 1,
+    endNum: 3.1,
+    duration: 4,
+    delay: 2,
+    decimals: 1,
+  },
+];
+
+const data_Return = [
+  {
+    startNum: 1,
+    endNum: 30,
+    duration: 4,
+    delay: 2,
+  },
+];
+
 export default function index() {
   return (
     <div className={` ${styles.main} `}>
@@ -22,8 +61,7 @@ export default function index() {
 
       <div className={`${styles.storeTitle} d-flex justify-content-center`}>
         <div className={`${styles.storeTitle_Text} `}>
-          <p>We enable stores to build</p>
-          <p>wonderful return experience</p>
+          <p>We enable stores to build wonderful return experience</p>
         </div>
       </div>
 
@@ -35,28 +73,63 @@ export default function index() {
         className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
       >
         <section className={`${styles.numberBox_Title}`}>
-          50 <span className={`${styles.numberBox_Title_Hours}`}>hours</span>
-          <span>saved on return handling a month</span>
+          {data_hours.map((data, i) => (
+            <CounterNew data={data} key={i} />
+          ))}{" "}
+          <span className={`${styles.numberBox_Title_Hours}`}>hours</span>
+          <span className={`${styles.numberBox_Title_span}`}>
+            saved on return handling a month
+          </span>
         </section>
 
-        <span className={`${styles.numberLine}`}></span>
+        <section className={`${styles.numberLine}`}></section>
 
+        {/* /// */}
         <section className={`${styles.numberBox_Title}`}>
-          70%
-          <span>reduce complained messages</span>
+          {/*  */}
+          <div className={`${styles}`}>
+            {data_reduce.map((data, i) => (
+              <CounterNew data={data} key={i} />
+            ))}
+            <span>%</span>
+          </div>
+
+          <span className={`${styles.numberBox_Title_span}`}>
+            reduce complained messages
+          </span>
         </section>
 
-        <span className={`${styles.numberLine}`}></span>
+        <section className={`${styles.numberLine}`}></section>
+        {/* /// */}
 
         <section className={`${styles.numberBox_Title}`}>
-          301 $<span>save logistics costs per RMA</span>
+          {/*  */}
+          <div className={`${styles}`}>
+            {data_save_Logistics.map((data, i) => (
+              <CounterNew data={data} key={i} />
+            ))}{" "}
+            <span>$</span>
+          </div>
+
+          <span className={`${styles.numberBox_Title_span}`}>
+            save logistics costs per RMA
+          </span>
         </section>
 
-        <span className={`${styles.numberLine}`}></span>
+        <section className={`${styles.numberLine}`}></section>
 
+        {/* /// */}
         <section className={`${styles.numberBox_Title}`}>
-          30%
-          <span>Return rate reduction</span>
+          <div className={`${styles}`}>
+            {data_Return.map((data, i) => (
+              <CounterNew data={data} key={i} />
+            ))}
+            <span>%</span>
+          </div>
+
+          <span className={`${styles.numberBox_Title_span}`}>
+            Return rate reduction
+          </span>
         </section>
       </div>
 
@@ -69,6 +142,7 @@ export default function index() {
             <span className={`${styles.about_Persifund_span}`}>Persifund</span>
           </h2>{" "}
         </div>
+
         <div
           className={`${styles.about_Persifund_Context} col-12 col-md-6 p-0`}
         >
@@ -255,7 +329,7 @@ export default function index() {
           <h2>Get Started and Delight Your Customers with ZERO cost NOW!</h2>
         </div>
 
-        <div className={`${styles.links} d-flex col-12 col-lg-6 col-xl-5 p-0`}>
+        {/* <div className={`${styles.links} d-flex col-12 col-lg-6 col-xl-5 p-0`}>
           <div
             className={`d-flex justify-content-center justify-lg-content-end`}
           >
@@ -273,9 +347,9 @@ export default function index() {
                 Book a demo
               </Link>
             </div>
-          </div>
+          </div> */}
 
-          {/* <div className={`${styles.try}`}>
+        {/* <div className={`${styles.try}`}>
             <h3>Try it free</h3>
 
             <section className={`${styles.try_Image}`}>
@@ -283,9 +357,9 @@ export default function index() {
             </section>
 
           </div> */}
-          {/* ///// */}
+        {/* ///// */}
 
-          <div className={`${styles.try}`}>
+        {/* <div className={`${styles.try}`}>
             <div className={`${styles} col-1 col-xxl-2 invisible`}>
               <section></section>
             </div>
@@ -304,7 +378,7 @@ export default function index() {
           </div>
 
           {/* //////// */}
-        </div>
+        {/* </div> */}
       </div>
 
       {/*  */}
