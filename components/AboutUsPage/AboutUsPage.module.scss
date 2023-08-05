@@ -108,18 +108,100 @@
   background: #f3f3f3;
 }
 
-@media screen and (min-width: 998px) and (max-width: 1199.98px) {
-  .about_Persifund h2,
-  .about_Persifund_span {
-    font-size: 55px !important;
+@media screen and (min-width: 1200px) {
+  .my_Container {
+    margin-right: 93.64px !important;
+    margin-left: 95.74px !important;
+  }
+
+  .delight h2 {
+    font-size: 48px !important;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 997.98px) {
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .my_Container {
+    margin-right: 53.64px !important;
+    margin-left: 55.74px !important;
+  }
+
+  .delight h2 {
+    font-size: 28px !important;
+  }
+
   .about_Persifund h2,
   .about_Persifund_span {
+    font-size: 44px !important;
+  }
+
+  .about_Persifund h2 {
+    padding: 0 38px !important;
+  }
+
+  .numberBox_Title {
+    font-size: 40px !important;
+    padding: 0 28px !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-style: 26px !important;
+  }
+
+  .numberBox_Title span:last-child {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .my_Container {
+    margin-right: 43.64px !important;
+    margin-left: 45.74px !important;
+  }
+
+  .delight h2 {
     font-size: 40px !important;
   }
+
+  .about_Persifund h2,
+  .about_Persifund_span {
+    font-size: 45px !important;
+  }
+
+  .about_Persifund h2 {
+    padding: 0 38px !important;
+  }
+
+  .numberBox_Title {
+    font-size: 38px !important;
+    padding: 0 25px !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-size: 26px !important;
+  }
+
+  .numberBox_Title span:last-child {
+    font-size: 14px !important;
+  }
+
+  .try {
+    margin-left: 138px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .about_Persifund h2 {
+    font-size: 53px !important;
+    // padding: 0 52px !important;
+  }
+
+  .about_Persifund_span {
+    font-size: 53px !important;
+  }
+}
+
+.links {
+  flex-direction: column;
 }
 
 .about_Persifund h2 {
@@ -155,7 +237,7 @@
   line-height: normal;
 }
 
-.my_container {
+.my_Container {
   margin-right: 93.64px;
   margin-left: 95.74px;
 }
@@ -178,15 +260,16 @@
 
 .efficiency_Title {
   color: #2a438f;
-  text-align: center;
+  text-align: end;
   font-family: Cal Sans;
   font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: 70px; /* 155.556% */
   // padding-left:  328px !important;
-  position: relative;
-  left: 11.5% !important;
+  // position: relative;
+  // left: 11.5% !important;
+  padding-right: 65px !important;
 }
 
 .efficiency_context {
@@ -210,7 +293,7 @@
 }
 
 .Icon_Energy {
-  margin-left: -8px;
+  margin-left: -3.2%; // -8px
   width: 60px;
   height: 60px;
   background: #2a438f;
@@ -220,19 +303,28 @@
   align-items: center;
 }
 
-.icon_seamless {
+.icon_seamless,
+.icon_environmental {
   margin-top: -7%;
 }
 
-.lineIcon_Energy_seamless {
+.lineIcon_Energy_seamless,
+.lineIcon_Energy_environmental {
   width: 2px;
   height: 268.468px;
   background: linear-gradient(88deg, #2a438f 25%, rgba(252, 247, 245, 0) 100%);
-  margin: 0 20px;
 }
 
-.Icon_Energy_seamless {
-  margin-left: -28px;
+.lineIcon_Energy_seamless {
+  margin-left: 40px;
+}
+
+.lineIcon_Energy_environmental {
+  margin-left: 100px;
+}
+
+.Icon_Energy_seamless,
+.Icon_Energy_environmental {
   width: 60px;
   height: 60px;
   background: #2a438f;
@@ -240,21 +332,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -8px;
+}
+
+.Icon_Energy_seamless {
+  margin-left: 12px;
+}
+
+.Icon_Energy_environmental {
+  margin-left: 72px;
 }
 
 // .seamless{}
 
-.seamless_Title {
+.seamless_Title,
+.environmental_Title {
   color: #2a438f;
-  text-align: center;
   font-family: Cal Sans;
-  font-size: 45px;
+  // font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: 70px;
 }
 
+.seamless_Title h2,
+.environmental_Title h2 {
+  font-size: 45px !important;
+}
+
+.seamless_Title {
+  padding-left: 12px !important;
+}
+
+.environmental_Title {
+  padding-right: 2px !important;
+  text-align: end !important;
+}
+
+.environmental_context,
 .seamless_context {
   color: rgba(42, 67, 143, 0.85);
   text-align: justify;
@@ -264,4 +378,299 @@
   font-weight: 400;
   line-height: normal;
   width: 399.853px;
+  position: relative;
+  right: 3.3%;
 }
+
+.environmental_context {
+  position: relative;
+  left: 1%;
+}
+
+.seamless_context {
+  position: relative;
+  right: 3.3%;
+}
+
+.costSavings,
+.seamless,
+.dedicated,
+.environmental {
+  margin-top: 19.6% !important;
+}
+
+.costSavings_Title {
+  color: #2a438f;
+  text-align: end;
+  font-family: Cal Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 155.556% */
+  // padding-left:  328px !important;
+  // position: relative;
+  // left: 11.5% !important;
+  padding-right: 65px !important;
+}
+
+.costSavings_context {
+  color: rgba(42, 67, 143, 0.85);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 399.853px;
+  position: relative;
+  right: 8.9%;
+}
+
+.dedicated_Title {
+  color: #2a438f;
+  text-align: end;
+  font-family: Cal Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 155.556% */
+  // padding-left:  328px !important;
+  // position: relative;
+  // left: 11.5% !important;
+  padding-right: 65px !important;
+}
+
+.dedicated_context {
+  color: rgba(42, 67, 143, 0.85);
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 399.853px;
+  position: relative;
+  right: 8.9%;
+}
+
+.centerTitle_Together {
+  color: rgba(42, 67, 143, 0.85);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 11.3%; // 162px
+}
+
+.centerTitle_Together h1 {
+  text-align: center;
+  width: 905.723px;
+}
+
+@media screen and (max-width: 991.98px) {
+  .efficiency_Title,
+  .costSavings_Title,
+  .environmental_Title,
+  .dedicated_Title {
+    padding: 0 !important ;
+  }
+
+  .environmental_Title,
+  .environmental_context {
+    margin: 0 auto;
+  }
+
+  // .environmental,
+  // .seamless {
+  //   flex-direction: column-reverse;
+  // }
+
+  .costSavings_context,
+  .environmental_context,
+  .dedicated_context,
+  .seamless_context,
+  .efficiency_context {
+    position: unset !important;
+  }
+
+  .storeTitle {
+    font-size: "" !important;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .seamless_context {
+    margin: 0 auto;
+  }
+
+  .storeTitle {
+    font-size: 34px !important;
+  }
+
+  .numberTitle {
+    font-size: 22px !important;
+  }
+
+  .numberBox_Title {
+    font-size: 22px !important;
+    padding: unset !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-size: 18px !important;
+  }
+
+  .about_Persifund {
+    text-align: center;
+  }
+  .about_Persifund h2 {
+    font-size: 45px !important;
+    padding: 0 !important;
+  }
+  .centerTitle_Together h1 {
+    font-size: 20px !important;
+    width: 400px !important;
+  }
+
+  .about_Persifund_span {
+    font-size: unset;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .storeTitle {
+    font-size: 34px !important;
+  }
+
+  .numberTitle {
+    font-size: 22px !important;
+  }
+
+  .numberBox_Title {
+    font-size: 22px !important;
+    padding: unset !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-size: 18px !important;
+  }
+
+  .about_Persifund {
+    text-align: center;
+  }
+  .about_Persifund h2 {
+    font-size: 45px !important;
+    padding: 0 !important;
+  }
+  .centerTitle_Together h1 {
+    font-size: 20px !important;
+    width: 400px !important;
+  }
+
+  .about_Persifund_span {
+    font-size: unset;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  // .numberBox_Title {
+
+  // }
+}
+.delight h2 {
+  color: #2a438f;
+  font-family: Cal Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 150% */
+  // width: 721.297px;
+}
+.shopify {
+  width: 235.674px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 32.5px 10px 10px 32.5px;
+  background: #1f1f35;
+  margin: 0 13.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopify_link {
+  text-decoration: none;
+  color: #e2ded7;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  display: flex;
+}
+
+.shopify_link span {
+  padding-left: 13.1px;
+}
+
+.shopify_link span img {
+  width: 28px;
+  height: 28.458px;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175.483px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px 32.5px 32.5px 10px;
+  border: 1.5px solid #35498b;
+}
+
+.demo_link {
+  text-decoration: none;
+  color: #35498b;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.try {
+  margin-top: 47px;
+  // margin-left: 70px;
+  display: flex;
+}
+
+.try h3 {
+  color: #58a991;
+  font-family: Balsamiq Sans;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 7px;
+  // margin-left: 70px;
+}
+
+.try_Image {
+  padding-left: 10px;
+  margin-top: -32px;
+
+  stroke-width: 2px;
+  stroke: #7cbca9;
+  width: 81.443px;
+  height: 49.158px;
+  transform: rotate(-7.301deg);
+  flex-shrink: 0;
+}
+
+// .try_Image img {
+//   stroke-width: 2px;
+//   stroke: #7cbca9;
+// }
