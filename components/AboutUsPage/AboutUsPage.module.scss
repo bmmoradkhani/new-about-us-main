@@ -13,142 +13,286 @@
   src: url("../../public/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
 
-.main {
-  border: 1px solid #000;
-  background: linear-gradient(180deg, #fcf7f4 100%, #fff 100%);
-
-  padding-top: 90px;
-  min-height: 80vh;
-
-  padding-bottom: 204px;
-}
-
-.ourMission_Text {
-  color: #d6635b;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 60px; /* 200% */
-  letter-spacing: 3px;
-  padding-top: 85px;
-}
-
-.storeTitle {
-  color: #2a438f;
-  text-align: center;
-  font-family: Cal Sans;
-  font-size: 65px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 70px; /* 107.692% */
-  margin-top: 35px;
-}
-
-.storeTitle_Text {
-  width: 1014.736px;
-}
-
-.numberTitle {
-  color: rgba(42, 67, 143, 0.85);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 60px; /* 200% */
-  letter-spacing: 0.9px;
-  padding-top: 85px;
-}
-
-.numberBox {
-  margin-top: 39px;
-  width: 100%; /* 1440.782px */
-  height: 174.715px;
-
-  background: #35498b;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-
-.numberBox_Title {
-  color: #fdf5e2;
-  font-family: Inter;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
-  padding: 0 65px;
-  text-align: center;
-}
-
-.numberBox_Title_span {
-  color: #f3f3f3;
-  text-align: center;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  padding-top: 10px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.numberBox_Title_Hours {
-  font-size: 35px !important;
-}
-
-.numberLine {
-  width: 1px;
-  height: 101.6px;
-  background: #f3f3f3;
-}
-
-@media screen and (min-width: 1200px) {
-  .my_Container {
-    margin-right: 93.64px !important;
-    margin-left: 95.74px !important;
+@media screen and (min-width: 428px) and (max-width: 575.98px) {
+  .centerTitle h1 {
+    font-size: 55px !important;
   }
 
   .delight h2 {
-    font-size: 48px !important;
+    font-size: 30px !important;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+@media screen and (max-width: 428px) {
   .my_Container {
-    margin-right: 53.64px !important;
-    margin-left: 55.74px !important;
+    margin-right: 40.18px;
+    margin-left: 40.18px;
   }
 
-  .delight h2 {
-    font-size: 28px !important;
+  .ourMission_Text {
+    color: #d6635b;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 200% */
+    letter-spacing: 1.5px;
   }
 
-  .about_Persifund h2,
-  .about_Persifund_span {
-    font-size: 44px !important;
+  .storeTitle {
+    font-size: 40px !important;
+    line-height: 60px !important; /* 150% */
   }
 
-  .about_Persifund h2 {
-    padding: 0 38px !important;
+  .storeTitle_Text {
+    width: 337.936px !important;
+  }
+
+  .numberBox {
+    display: block !important;
+    height: 776.685px !important;
   }
 
   .numberBox_Title {
-    font-size: 40px !important;
-    padding: 0 28px !important;
+    padding: 45px 0 !important;
+    font-size: 58px !important;
   }
 
   .numberBox_Title_Hours {
-    font-style: 26px !important;
+    font-size: 32px !important;
   }
 
-  .numberBox_Title_span {
-    font-size: 14px !important;
+  .numberLine {
+    width: 143.361px;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .about_Persifund h2 {
+    font-size: 25px !important;
+  }
+
+  .about_Persifund_span {
+    padding-left: 5px !important;
+    font-size: 25px !important;
+  }
+
+  .about_Persifund_Context {
+    text-align: center !important;
+    font-size: 16px !important;
+    line-height: 28px; /* 175% */
+  }
+
+  .icon {
+    display: grid !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 24px auto 33.62px auto;
+  }
+
+  .lineIcon_Energy {
+    width: 2px !important;
+    height: 24.867px !important;
+    margin: 0 auto !important;
+    background: #2a438f !important;
+  }
+
+  .Icon_Energy {
+    margin: 0 auto !important;
+    width: 48px !important;
+    height: 48px !important;
+    text-align: center;
+  }
+
+  .Icon_Energy img {
+    width: 33.204px;
+    height: 33.204px;
+  }
+  .centerTitle h1 {
+    font-size: 45px !important;
+  }
+
+  .seamless {
+    flex-direction: column-reverse !important;
+  }
+
+  .seamless_Title h2,
+  .environmental_Title h2,
+  .dedicated_Title h2,
+  .costSavings_Title h2,
+  .efficiency_Title h2 {
+    font-size: 30px !important;
+  }
+
+  .environmental_Title,
+  .dedicated_Title h2 {
+    text-align: center !important;
+  }
+
+  .centerTitle_Together h1 {
+    width: 299.438px !important;
+    font-size: 23px !important;
+  }
+
+  .delight h2 {
+    text-align: center;
+    font-size: 33px !important;
+    line-height: normal !important;
+  }
+
+  .center_Box {
+    margin-right: 52.22px !important;
+    margin-left: 52.22px !important;
+  }
+
+  .dedicated_context p,
+  .environmental_context p,
+  .efficiency_context p,
+  .seamless_context p,
+  .costSavings_context p {
+    text-align: center !important;
+    font-size: 16px !important;
+  }
+
+  .dedicated p {
+    width: auto !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .efficiency,
+  .seamless,
+  .costSavings,
+  .environmental,
+  .dedicated {
+    display: flex !important;
+    justify-content: space-evenly !important;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .seamless_context {
+    margin: 0 auto;
+  }
+
+  .storeTitle_Text p {
+    font-size: 34px !important;
+  }
+
+  .numberTitle {
+    font-size: 22px !important;
+  }
+
+  .numberBox_Title {
+    font-size: 22px !important;
+    padding: unset !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-size: 18px !important;
+  }
+
+  .about_Persifund {
+    text-align: center;
+  }
+  .about_Persifund h2 {
+    font-size: 45px !important;
+    padding: 0 !important;
+  }
+  .centerTitle_Together h1 {
+    font-size: 20px !important;
+    width: 400px !important;
+  }
+
+  .about_Persifund_span {
+    font-size: unset;
+  }
+
+  .dedicated {
+    display: grid !important;
+    justify-content: center !important;
+  }
+
+  .environmental_context,
+  .seamless_context {
+    justify-content: center !important;
+  }
+
+  .efficiency_context,
+  .costSavings_context {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .seamless {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+  .environmental_context p,
+  .seamless_context p,
+  .efficiency_context p,
+  .costSavings_context p,
+  .dedicated_context p {
+    width: auto !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .storeTitle {
+    font-size: 34px !important;
+  }
+
+  .storeTitle_Text p {
+    font-size: 44px !important;
+  }
+
+  .numberTitle {
+    font-size: 22px !important;
+  }
+
+  .numberBox_Title {
+    font-size: 22px !important;
+    padding: unset !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-size: 18px !important;
+  }
+
+  .about_Persifund {
+    text-align: center;
+  }
+  .about_Persifund h2 {
+    font-size: 45px !important;
+    padding: 0 !important;
+  }
+  .centerTitle_Together h1 {
+    font-size: 20px !important;
+    width: 400px !important;
+  }
+
+  .about_Persifund_span {
+    font-size: unset;
+  }
+
+  .dedicated_Title h2 {
+    font-size: 28.3px !important;
+  }
+
+  .environmental_Title h2 {
+    font-size: 33px !important;
+  }
+
+  .seamless_Title h2 {
+    font-size: 25.2px !important;
+  }
+
+  .delight h2 {
+    font-size: 35px !important;
   }
 }
 
@@ -187,17 +331,231 @@
   .try {
     margin-left: 138px;
   }
+
+  .environmental_context p {
+    width: auto !important;
+  }
+
+  .environmental_Title h2 {
+    font-size: 25px !important;
+  }
+
+  .storeTitle_Text p {
+    font-size: 55px !important;
+  }
+
+  .seamless_Title h2 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .efficiency_Title,
+  .costSavings_Title,
+  .environmental_Title,
+  .dedicated_Title {
+    padding: 0 !important ;
+  }
+
+  .environmental_Title,
+  .environmental_context {
+    margin: 0 auto;
+  }
+
+  // .environmental,
+  // .seamless {
+  //   flex-direction: column-reverse;
+  // }
+
+  .costSavings_context,
+  .environmental_context,
+  .dedicated_context,
+  .seamless_context,
+  .efficiency_context {
+    position: unset !important;
+  }
+
+  // .storeTitle {
+  //   font-size: "" !important;
+  // }
+}
+
+@media screen and (min-width: 992px) {
+  .about_Persifund_underline svg {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .my_Container {
+    margin-right: 53.64px !important;
+    margin-left: 55.74px !important;
+  }
+
+  .delight h2 {
+    font-size: 28px !important;
+  }
+
+  .about_Persifund h2,
+  .about_Persifund_span {
+    font-size: 44px !important;
+  }
+
+  .about_Persifund h2 {
+    padding: 0 38px !important;
+  }
+
+  .numberBox_Title {
+    font-size: 40px !important;
+    padding: 0 28px !important;
+  }
+
+  .numberBox_Title_Hours {
+    font-style: 26px !important;
+  }
+
+  .numberBox_Title_span {
+    font-size: 14px !important;
+  }
+
+  .environmental_Title h2 {
+    font-size: 32px !important;
+  }
+
+  .seamless_Title h2 {
+    font-size: 44px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .my_Container {
+    margin-right: 93.64px !important;
+    margin-left: 95.74px !important;
+  }
+
+  .delight h2 {
+    font-size: 48px !important;
+  }
+
+  .about_Persifund_underline svg {
+    margin-left: 200px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .about_Persifund_Context {
+    width: 504px !important;
+  }
+
   .about_Persifund h2 {
     font-size: 53px !important;
-    // padding: 0 52px !important;
   }
 
   .about_Persifund_span {
     font-size: 53px !important;
   }
+}
+
+@media screen and (min-width: 1400px) {
+  .about_Persifund_Context p {
+    width: 624px !important;
+  }
+}
+
+.main {
+  border: 1px solid #000;
+  background: linear-gradient(180deg, #fcf7f4 100%, #fff 100%);
+  padding-top: 90px;
+  min-height: 80vh;
+  padding-bottom: 204px;
+  // max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ourMission_Text {
+  color: #d6635b;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 200% */
+  letter-spacing: 3px;
+  padding-top: 85px;
+}
+
+.storeTitle {
+  margin-top: 35px;
+}
+
+.storeTitle_Text p {
+  color: #2a438f;
+  text-align: center;
+  font-family: Cal Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 107.692% */
+}
+
+.storeTitle_Text {
+  width: 1014.736px;
+}
+
+.numberTitle {
+  color: rgba(42, 67, 143, 0.85);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 200% */
+  letter-spacing: 0.9px;
+  padding-top: 85px;
+}
+
+.numberBox {
+  margin-top: 39px;
+  width: 100%; /* 1440.782px */
+  height: 174.715px;
+  background: #35498b;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.numberBox_Title {
+  color: #fdf5e2;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 65px;
+  text-align: center;
+}
+
+.numberBox_Title_span {
+  color: #f3f3f3;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numberBox_Title_Hours {
+  font-size: 35px !important;
+}
+
+.numberLine {
+  width: 1px;
+  height: 101.6px;
+  background: #f3f3f3;
 }
 
 .links {
@@ -206,7 +564,6 @@
 
 .about_Persifund h2 {
   color: #2a438f;
-  // text-align: center;
   font-family: Cal Sans;
   font-size: 65px;
   font-style: normal;
@@ -245,17 +602,21 @@
 .centerTitle {
   color: #2a438f;
   text-align: center;
-  font-family: Cal Sans;
-  font-size: 65px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 70px; /* 107.692% */
+
   margin-top: 10%;
   margin-bottom: 16%;
 }
 
+.centerTitle h1 {
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 107.692% */
+  font-size: 65px;
+}
+
 .icon {
-  margin-top: -7%;
+  margin-top: -85px;
 }
 
 .efficiency_Title {
@@ -266,13 +627,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: 70px; /* 155.556% */
-  // padding-left:  328px !important;
-  // position: relative;
-  // left: 11.5% !important;
-  padding-right: 65px !important;
 }
 
-.efficiency_context {
+.efficiency_context p {
   color: rgba(42, 67, 143, 0.85);
   text-align: justify;
   font-family: Poppins;
@@ -281,19 +638,16 @@
   font-weight: 400;
   line-height: normal;
   width: 399.853px;
-  position: relative;
-  right: 8.9%;
 }
 
 .lineIcon_Energy {
-  margin: 0 20px;
+  margin: 0 auto;
   width: 2px;
   height: 268.468px;
   background: linear-gradient(88deg, #2a438f 25%, rgba(252, 247, 245, 0) 100%);
 }
 
 .Icon_Energy {
-  margin-left: -3.2%; // -8px
   width: 60px;
   height: 60px;
   background: #2a438f;
@@ -301,26 +655,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .icon_seamless,
 .icon_environmental {
-  margin-top: -7%;
+  margin-top: -85px;
 }
 
 .lineIcon_Energy_seamless,
 .lineIcon_Energy_environmental {
+  margin: 0 auto;
   width: 2px;
   height: 268.468px;
   background: linear-gradient(88deg, #2a438f 25%, rgba(252, 247, 245, 0) 100%);
 }
 
 .lineIcon_Energy_seamless {
-  margin-left: 40px;
+  margin: 0 auto;
 }
 
-.lineIcon_Energy_environmental {
-  margin-left: 100px;
+.environmental_Title h2 {
+  font-size: 39px !important;
 }
 
 .Icon_Energy_seamless,
@@ -332,44 +688,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.Icon_Energy_seamless {
-  margin-left: 12px;
-}
-
-.Icon_Energy_environmental {
-  margin-left: 72px;
-}
-
-// .seamless{}
-
-.seamless_Title,
-.environmental_Title {
-  color: #2a438f;
-  font-family: Cal Sans;
-  // font-size: 45px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 70px;
+  margin: 0 auto;
 }
 
 .seamless_Title h2,
 .environmental_Title h2 {
-  font-size: 45px !important;
+  color: #2a438f;
+  font-family: Cal Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+  font-size: 45px;
 }
 
-.seamless_Title {
-  padding-left: 12px !important;
-}
-
-.environmental_Title {
-  padding-right: 2px !important;
-  text-align: end !important;
-}
-
-.environmental_context,
 .seamless_context {
+  display: flex !important;
+  justify-content: end !important;
+}
+
+.environmental_context p,
+.seamless_context p {
   color: rgba(42, 67, 143, 0.85);
   text-align: justify;
   font-family: Poppins;
@@ -378,18 +716,11 @@
   font-weight: 400;
   line-height: normal;
   width: 399.853px;
-  position: relative;
-  right: 3.3%;
 }
 
 .environmental_context {
-  position: relative;
-  left: 1%;
-}
-
-.seamless_context {
-  position: relative;
-  right: 3.3%;
+  display: flex;
+  justify-content: end;
 }
 
 .costSavings,
@@ -407,13 +738,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: 70px; /* 155.556% */
-  // padding-left:  328px !important;
-  // position: relative;
-  // left: 11.5% !important;
-  padding-right: 65px !important;
 }
 
-.costSavings_context {
+.costSavings_context p {
   color: rgba(42, 67, 143, 0.85);
   text-align: justify;
   font-family: Poppins;
@@ -422,11 +749,9 @@
   font-weight: 400;
   line-height: normal;
   width: 399.853px;
-  position: relative;
-  right: 8.9%;
 }
 
-.dedicated_Title {
+.dedicated_Title h2 {
   color: #2a438f;
   text-align: end;
   font-family: Cal Sans;
@@ -434,13 +759,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: 70px; /* 155.556% */
-  // padding-left:  328px !important;
-  // position: relative;
-  // left: 11.5% !important;
-  padding-right: 65px !important;
 }
 
-.dedicated_context {
+.dedicated_context p {
   color: rgba(42, 67, 143, 0.85);
   text-align: justify;
   font-family: Poppins;
@@ -449,135 +770,23 @@
   font-weight: 400;
   line-height: normal;
   width: 399.853px;
-  position: relative;
-  right: 8.9%;
 }
 
 .centerTitle_Together {
-  color: rgba(42, 67, 143, 0.85);
-  font-family: Poppins;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
   margin-top: 11.3%; // 162px
 }
 
 .centerTitle_Together h1 {
   text-align: center;
   width: 905.723px;
+  color: rgba(42, 67, 143, 0.85);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-@media screen and (max-width: 991.98px) {
-  .efficiency_Title,
-  .costSavings_Title,
-  .environmental_Title,
-  .dedicated_Title {
-    padding: 0 !important ;
-  }
-
-  .environmental_Title,
-  .environmental_context {
-    margin: 0 auto;
-  }
-
-  // .environmental,
-  // .seamless {
-  //   flex-direction: column-reverse;
-  // }
-
-  .costSavings_context,
-  .environmental_context,
-  .dedicated_context,
-  .seamless_context,
-  .efficiency_context {
-    position: unset !important;
-  }
-
-  .storeTitle {
-    font-size: "" !important;
-  }
-}
-
-@media screen and (max-width: 575.98px) {
-  .seamless_context {
-    margin: 0 auto;
-  }
-
-  .storeTitle {
-    font-size: 34px !important;
-  }
-
-  .numberTitle {
-    font-size: 22px !important;
-  }
-
-  .numberBox_Title {
-    font-size: 22px !important;
-    padding: unset !important;
-  }
-
-  .numberBox_Title_Hours {
-    font-size: 18px !important;
-  }
-
-  .about_Persifund {
-    text-align: center;
-  }
-  .about_Persifund h2 {
-    font-size: 45px !important;
-    padding: 0 !important;
-  }
-  .centerTitle_Together h1 {
-    font-size: 20px !important;
-    width: 400px !important;
-  }
-
-  .about_Persifund_span {
-    font-size: unset;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-  .storeTitle {
-    font-size: 34px !important;
-  }
-
-  .numberTitle {
-    font-size: 22px !important;
-  }
-
-  .numberBox_Title {
-    font-size: 22px !important;
-    padding: unset !important;
-  }
-
-  .numberBox_Title_Hours {
-    font-size: 18px !important;
-  }
-
-  .about_Persifund {
-    text-align: center;
-  }
-  .about_Persifund h2 {
-    font-size: 45px !important;
-    padding: 0 !important;
-  }
-  .centerTitle_Together h1 {
-    font-size: 20px !important;
-    width: 400px !important;
-  }
-
-  .about_Persifund_span {
-    font-size: unset;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-  // .numberBox_Title {
-
-  // }
-}
 .delight h2 {
   color: #2a438f;
   font-family: Cal Sans;
@@ -585,7 +794,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 72px; /* 150% */
-  // width: 721.297px;
 }
 .shopify {
   width: 235.674px;
@@ -643,7 +851,6 @@
 
 .try {
   margin-top: 47px;
-  // margin-left: 70px;
   display: flex;
 }
 
@@ -655,7 +862,6 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 7px;
-  // margin-left: 70px;
 }
 
 .try_Image {
@@ -668,92 +874,4 @@
   height: 49.158px;
   transform: rotate(-7.301deg);
   flex-shrink: 0;
-}
-
-// .try_Image img {
-//   stroke-width: 2px;
-//   stroke: #7cbca9;
-// }
-
-@media screen and (min-width: 1400px) {
-  .about_Persifund_Context {
-    width: 626.364px !important;
-  }
-}
-
-@media screen and (max-width: 428px) {
-  .my_Container {
-    margin-right: 40.18px;
-    margin-left: 40.18px;
-  }
-
-  .ourMission_Text {
-    color: #d6635b;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 60px; /* 200% */
-    letter-spacing: 1.5px;
-  }
-
-  .storeTitle {
-    font-size: 40px !important;
-    line-height: 60px !important; /* 150% */
-  }
-
-  .storeTitle_Text {
-    width: 337.936px !important;
-  }
-
-  .numberBox {
-    display: block !important;
-    height: 776.685px !important;
-  }
-
-  .numberBox_Title {
-    padding: 45px 0 !important;
-    font-size: 58px !important;
-  }
-
-  .numberBox_Title_Hours {
-    font-size: 32px !important;
-  }
-
-  .numberLine {
-    width: 143.361px;
-    height: 1px;
-    margin: 0 auto;
-  }
-
-  .about_Persifund h2 {
-    font-size: 45px !important;
-  }
-
-  .about_Persifund_span {
-    font-size: 45px !important;
-  }
-
-  .about_Persifund_Context {
-    text-align: center !important;
-    font-size: 16px !important;
-    line-height: 28px; /* 175% */
-  }
-
-  .icon {
-    display: block !important;
-  }
-
-  .lineIcon_Energy {
-    width: 2px !important;
-    height: 48.867px !important;
-    margin: 0 auto !important;
-  }
-
-  .Icon_Energy {
-    margin: 0 auto !important;
-    width: 48px !important;
-    height: 48px !important;
-  }
 }
