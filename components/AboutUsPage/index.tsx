@@ -171,9 +171,9 @@ export default function index() {
         </section>
       </div>
 
-      <div className={`${styles.my_Container} row mt-5`}>
+      <div className={`${styles.my_Container} ${styles.row_Title} row mt-5`}>
         <div
-          className={`${styles.about_Persifund} col-12 col-md-6 my-3 my-md-0 p-0`}
+          className={`${styles.about_Persifund} col-12 col-md-6 col-lg-5 my-3 my-md-0 p-0`}
         >
           <div className="">
             <h2 className="d-flex justify-content-center">
@@ -221,7 +221,7 @@ export default function index() {
         </div>
 
         <div
-          className={`${styles.about_Persifund_Context} col-12 col-md-6 p-0`}
+          className={`${styles.about_Persifund_Context} col-12 col-md-6 col-lg-5 p-0`}
         >
           <p>
             Welcome to Persifund, a leading provider of innovative return
@@ -258,7 +258,7 @@ export default function index() {
             <h2>Efficiency</h2>
           </div>
 
-          <div className={`${styles.icon} p-0  d-none d-sm-inline`}>
+          <div className={`${styles.icon} p-0  d-none d-md-inline`}>
             <div className={`${styles.lineIcon_Energy}`}></div>
 
             <div className={`${styles.Icon_Energy}`}>
@@ -287,7 +287,7 @@ export default function index() {
             </p>
           </div>
 
-          <div className={`${styles.icon_seamless} p-0 d-none d-sm-inline`}>
+          <div className={`${styles.icon_seamless} p-0 d-none d-md-inline`}>
             <div className={`${styles.lineIcon_Energy_seamless}`}></div>
 
             <div className={`${styles.Icon_Energy_seamless}`}>
@@ -306,12 +306,12 @@ export default function index() {
 
         <div className={`${styles.costSavings} m-0`}>
           <div
-            className={`${styles.costSavings_Title} p-0 col-12 col-sm-5 text-center text-lg-end`}
+            className={`${styles.costSavings_Title} p-0 col-12 col-sm-5 text-center text-sm-end`}
           >
             <h2>Cost Savings</h2>
           </div>
 
-          <div className={`${styles.icon} p-0  d-none d-sm-inline`}>
+          <div className={`${styles.icon} p-0  d-none d-md-inline`}>
             <div className={`${styles.lineIcon_Energy}`}></div>
 
             <div className={`${styles.Icon_Energy}`}>
@@ -346,7 +346,7 @@ export default function index() {
           </div>
 
           <div
-            className={`${styles.icon_environmental} p-0  d-none d-sm-inline`}
+            className={`${styles.icon_environmental} p-0  d-none d-md-inline`}
           >
             <div className={`${styles.lineIcon_Energy_environmental}`}></div>
 
@@ -371,7 +371,7 @@ export default function index() {
             <h2>Dedicated Support</h2>
           </div>
 
-          <div className={`${styles.icon} p-0 d-none d-sm-inline`}>
+          <div className={`${styles.icon} p-0 d-none d-md-inline`}>
             <div className={`${styles.lineIcon_Energy}`}></div>
 
             <div className={`${styles.Icon_Energy}`}>
