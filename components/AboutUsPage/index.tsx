@@ -20,50 +20,9 @@ import wave2 from "../../public/assets/images/about-us/wave2.png";
 // // import shopify from "../../public/assets/images/about-us/shopify.png";
 // import vector from "../../public/assets/images/about-us/Vector.png";
 
-import CounterNew from "./CounterNew";
-import { useState } from "react";
-import ScrollTrigger from "react-scroll-trigger";
-
-const data_hours = [
-  {
-    startNum: 1,
-    endNum: 50,
-    duration: 4,
-    delay: 0.7,
-  },
-];
-
-const data_reduce = [
-  {
-    startNum: 1,
-    endNum: 70,
-    duration: 4,
-    delay: 0.7,
-  },
-];
-
-const data_save_Logistics = [
-  {
-    startNum: 1,
-    endNum: 3.1,
-    duration: 4,
-    delay: 0.7,
-    decimals: 1,
-  },
-];
-
-const data_Return = [
-  {
-    startNum: 1,
-    endNum: 30,
-    duration: 4,
-    delay: 0.7,
-  },
-];
+import Share from "./Share";
 
 export default function index() {
-  const [counterOn, setCounterOn] = useState(false);
-
   return (
     <div className={` ${styles.main} `}>
       <div className={` ${styles.ourMission} `}>
@@ -87,91 +46,10 @@ export default function index() {
       <div
         className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
       >
-        <section className={`${styles.numberBox_Title}`}>
-          <ScrollTrigger
-            style={{ display: "inline" }}
-            onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
-          >
-            {counterOn &&
-              data_hours.map((data, i) => <CounterNew data={data} key={i} />)}
-          </ScrollTrigger>
-
-          <span className={`${styles.numberBox_Title_Hours}`}> hours</span>
-          <span className={`${styles.numberBox_Title_span}`}>
-            saved on return handling a month
-          </span>
-        </section>
-
-        <section className={`${styles.numberLine}`}></section>
-
-        {/* /// */}
-        <section className={`${styles.numberBox_Title}`}>
-          {/*  */}
-          {/* <div className={`${styles}`}> */}
-          <ScrollTrigger
-            style={{ display: "inline" }}
-            onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
-          >
-            {counterOn &&
-              data_reduce.map((data, i) => <CounterNew data={data} key={i} />)}
-          </ScrollTrigger>
-          <span>%</span>
-          {/* </div> */}
-
-          <span className={`${styles.numberBox_Title_span}`}>
-            reduce complained messages
-          </span>
-        </section>
-
-        <section className={`${styles.numberLine}`}></section>
-        {/* /// */}
-
-        <section className={`${styles.numberBox_Title}`}>
-          {/*  */}
-          {/* <div className={`${styles}`}> */}
-          <ScrollTrigger
-            style={{ display: "inline" }}
-            onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
-          >
-            {counterOn &&
-              data_save_Logistics.map((data, i) => (
-                <CounterNew data={data} key={i} />
-              ))}
-          </ScrollTrigger>
-
-          <span>$</span>
-          {/* </div> */}
-          <span className={`${styles.numberBox_Title_span}`}>
-            save logistics costs per RMA
-          </span>
-        </section>
-
-        <section className={`${styles.numberLine}`}></section>
-
-        {/* /// */}
-        <section className={`${styles.numberBox_Title}`}>
-          {/* <div className={`${styles}`}> */}
-          <ScrollTrigger
-            style={{ display: "inline" }}
-            onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
-          >
-            {counterOn &&
-              data_Return.map((data, i) => <CounterNew data={data} key={i} />)}
-          </ScrollTrigger>
-          <span>%</span>
-          {/* </div> */}
-
-          <span className={`${styles.numberBox_Title_span}`}>
-            Return rate reduction
-          </span>
-        </section>
+        <Share />
       </div>
 
-      <div className={`${styles.my_Container} ${styles.row_Title} row mt-5`}>
+      <div className={`${styles.my_Container} ${styles.row_Title} row`}>
         <div
           className={`${styles.about_Persifund} col-12 col-md-6 col-lg-5 my-3 my-md-0 p-0`}
         >

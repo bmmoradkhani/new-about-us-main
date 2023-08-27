@@ -57,14 +57,14 @@
 
   .numberBox_Title {
     // padding: 45px 0 !important;
-    padding: 7px 0 !important;
+    padding: 50px 0 !important;
     font-size: 58px !important;
   }
 
   .numberLine {
-    width: 143.361px;
-    height: 1px;
-    margin: 0 auto;
+    width: 143.361px !important;
+    height: 1px !important;
+    margin: 0 auto !important;
   }
 
   .about_Persifund_span {
@@ -526,7 +526,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 0 65px;
+  padding: 0 45px;
   text-align: center;
 }
 
@@ -593,6 +593,10 @@
 .my_Container {
   margin-right: 93.64px;
   margin-left: 95.74px;
+}
+
+.row_Title {
+  margin-top: 120px;
 }
 
 .centerTitle {
@@ -870,4 +874,186 @@
   height: 49.158px;
   transform: rotate(-7.301deg);
   flex-shrink: 0;
+}
+
+// .brNone:last-child {
+//   border-right: none !important;
+//   // width: 0 !important;
+//   // height: 0 !important;
+//   // padding: 0 ;
+// }
+
+@media screen and (max-width: 259.98px) {
+  .counter_Text_Content {
+    color: #f3f3f3;
+    text-align: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 17.5px !important;
+  }
+
+  .counter_Text {
+    color: #fdf5e2;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+  }
+
+  .numberBox_Title::after {
+    content: "";
+    border-bottom: 1px solid #f3f3f3 !important;
+
+    width: 147px;
+    height: 1px;
+    display: block;
+    margin: 46px auto 0;
+  }
+
+  .numberBox_Title:last-child::after {
+    border: none !important;
+  }
+
+  .numberBox_Title {
+    padding: 55px 0 0 !important;
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width: 575.98px) {
+  .counter_Text_Content {
+    color: #f3f3f3;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 17.5px !important;
+  }
+
+  .counter_Text {
+    color: #fdf5e2;
+    font-family: Inter;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+  }
+
+  .numberBox_Title::after {
+    content: "";
+    border-bottom: 1px solid #f3f3f3 !important;
+
+    width: 147px;
+    height: 1px;
+    display: block;
+    margin: 46px auto 0;
+  }
+
+  .numberBox_Title:last-child::after {
+    border: none !important;
+  }
+
+  .numberBox_Title {
+    padding: 42px 0 0 !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .brNone {
+    font-size: 20px !important;
+    border-right: 1px solid #fcf7f4 !important;
+  }
+
+  .numberBox_Title:last-child {
+    border-right: none !important;
+  }
+
+  .dGrid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    text-align: center !important;
+  }
+
+  .counter_Text_Content {
+    padding-top: 12.25px !important;
+
+    color: #fcf7f4;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .counter_Text {
+    color: #fcf7f4;
+    font-family: Inter;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .counter_Text {
+    font-size: 25px !important;
+  }
+
+  .counter_Text_Content {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .numberBox_Title {
+    padding: 0 29px !important;
+  }
+
+  .counter_Text {
+    font-size: 46px !important;
+  }
+
+  .counter_Text_Content {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .numberBox_Title {
+    padding: 0 15px !important;
+  }
+
+  .counter_Text {
+    font-size: 43px !important;
+  }
+
+  .counter_Text_Content {
+    font-size: 13.5px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .numberBox_Title {
+    padding: 0 11px !important;
+  }
+
+  .counter_Text {
+    font-size: 35px !important;
+  }
+
+  .counter_Text_Content {
+    font-size: 10.5px !important;
+  }
 }
