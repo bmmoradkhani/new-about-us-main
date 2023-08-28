@@ -1,109 +1,59 @@
-import React from "react";
+import React, { FC } from "react";
 import { useState } from "react";
 import ScrollTrigger from "react-scroll-trigger";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import styles from "./AboutUsPage.module.scss";
+import { Istate as Iprops } from "./index";
 
-import CounterNew from "./CounterNew";
+// import CounterNew from "./CounterNew";
 
-const data = [
-  {
-    startNum: "1",
-    endNum: "50",
-    duration: "4",
-    delay: "0.7",
-    suffix: " hours",
-    text: "saved on return handling a month",
-  },
+import { useRef } from "react";
+import { useCountUp } from "react-countup";
 
-  {
-    startNum: "1",
-    endNum: "70",
-    duration: "4",
-    delay: "0.7",
-    suffix: "%",
-    text: "reduce complained messages",
-  },
+const CounterNew = (props) => {
+  const {
+    data: { startNum, endNum, duration, delay, decimals, suffix },
+  } = props;
+  const countUpRef = useRef(null);
 
-  {
-    startNum: "1",
-    endNum: "3.1",
-    duration: "4",
-    delay: "0.7",
-    suffix: " $",
-    decimals: "1",
-    text: "save logistics costs per RMA",
-  },
+  const {} = useCountUp({
+    ref: countUpRef,
+    start: startNum,
+    end: endNum,
+    delay,
+    duration,
+    decimals,
+    suffix,
+  });
 
-  {
-    startNum: "1",
-    endNum: "30",
-    duration: "4",
-    delay: "0.7",
-    suffix: "%",
-    text: "Return rate reduction",
-  },
-];
+  return (
+    <section className={`${styles.counter_Text}`} ref={countUpRef}></section>
+  );
+};
 
-const Share = () => {
+const Share: FC<Iprops> = (data: Iprops) => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <section
-    // style={{
-    //   display: "grid",
-    //   gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    // }}
-    >
+    <section>
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(true)}
       >
         {counterOn && (
-          <section className={`${styles.dGrid} `}>
-            {data.map((data) => (
-              <section className={`${styles.numberBox_Title} ${styles.brNone}`}>
-                <CounterNew data={data} />
+          <Row>
+            {data.map((item: Iprops) => (
+              <Col className={`${styles.numberBox_Title} ${styles.brNone}`}>
+                <CounterNew data={item} />
                 <section className={`${styles.counter_Text_Content}`}>
-                  {data.text}
+                  {item.text}
                 </section>
-                {/* <div className={`${styles.borderStyleCounter}`}></div> */}
-              </section>
+              </Col>
             ))}
-            {/* {data.map((text) => ( */}
-            {/* <section className={`${styles.numberBox_Title_span} `}> */}
-            {/* <span>{text.text}</span> */}
-            {/* </section> */}
-            {/* ))} */}
-          </section>
+          </Row>
         )}
-        {/*  */}
-        {/* <section
-          className={` `}
-          style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr" }}
-        >
-          {data.map((text, i) => (
-            <section className={`${styles.numberBox_Title_span} `} key={i}>
-              {text.text}
-              <section className={`${styles.numberLine}`}></section>
-            </section>
-          ))}
-        </section> */}
-
-        {/* <Row style={{ display: "flex" }}>
-          {data.map((t, i) => (
-            <Col
-              style={{
-                fontSize: "14px",
-                // padding: "10px 0",
-              }}
-            >
-              {t.text}
-            </Col>
-          ))}{" "}
-        </Row> */}
       </ScrollTrigger>
     </section>
   );

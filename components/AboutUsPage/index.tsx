@@ -14,6 +14,9 @@ import wave from "../../public/assets/images/about-us/wave.png";
 import wave1 from "../../public/assets/images/about-us/wave1.png";
 import wave2 from "../../public/assets/images/about-us/wave2.png";
 
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 // import persifundLine from "../../public/assets/images/about-us/Persifund line.png";
 
 // import shopify from "../../public/assets/images/about-us/unnamed.png";
@@ -22,7 +25,58 @@ import wave2 from "../../public/assets/images/about-us/wave2.png";
 
 import Share from "./Share";
 
-export default function index() {
+import CounterNew from "./CounterNew";
+
+export interface Istate {
+  startNum: Number;
+  endNum: Number;
+  duration: Number;
+  delay: Number;
+  decimals?: Number;
+  suffix: String;
+  text: String;
+}
+
+const index = () => {
+  const data: Istate[] = [
+    {
+      startNum: 1,
+      endNum: 50,
+      duration: 4,
+      delay: 1,
+      suffix: " hours",
+      text: "saved on return handling a month",
+    },
+
+    {
+      startNum: 1,
+      endNum: 70,
+      duration: 4,
+      delay: 1,
+      suffix: "%",
+      text: "reduce complained messages",
+    },
+
+    {
+      startNum: 1,
+      endNum: 3.1,
+      duration: 4,
+      delay: 1,
+      suffix: " $",
+      decimals: 1,
+      text: "save logistics costs per RMA",
+    },
+    {
+      startNum: 1,
+      endNum: 3.1,
+      duration: 4,
+      delay: 1,
+      suffix: " $",
+      decimals: 1,
+      text: "save logistics costs per RMA",
+    },
+  ];
+
   return (
     <div className={` ${styles.main} `}>
       <div className={` ${styles.ourMission} `}>
@@ -47,6 +101,17 @@ export default function index() {
         className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
       >
         <Share />
+
+        {/* <Row>
+          {data.map((item: Istate) => (
+            <Col className={`${styles.numberBox_Title} ${styles.brNone}`}>
+              <CounterNew data={item} />
+              <section className={`${styles.counter_Text_Content}`}>
+                {item.text}
+              </section>
+            </Col>
+          ))}
+        </Row> */}
       </div>
 
       <div className={`${styles.my_Container} ${styles.row_Title} row`}>
@@ -582,4 +647,5 @@ export default function index() {
       {/*  */}
     </div>
   );
-}
+};
+export default index;
