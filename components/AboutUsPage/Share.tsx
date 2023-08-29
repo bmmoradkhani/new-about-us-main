@@ -12,7 +12,11 @@ import { Istate as Iprops } from "./index";
 import { useRef } from "react";
 import { useCountUp } from "react-countup";
 
-const CounterNew = (props) => {
+export interface UsersListProps {
+  users: Iprops[];
+}
+
+const CounterNew = (props: any) => {
   const {
     data: { startNum, endNum, duration, delay, decimals, suffix },
   } = props;
@@ -33,9 +37,9 @@ const CounterNew = (props) => {
   );
 };
 
-const Share: FC<Iprops> = (data: Iprops) => {
+const Share: FC<UsersListProps> = (data: UsersListProps) => {
   const [counterOn, setCounterOn] = useState(false);
-
+  console.log(data.users);
   return (
     <section>
       <ScrollTrigger
@@ -43,9 +47,12 @@ const Share: FC<Iprops> = (data: Iprops) => {
         onExit={() => setCounterOn(true)}
       >
         {counterOn && (
-          <Row>
-            {data.map((item: Iprops) => (
-              <Col className={`${styles.numberBox_Title} ${styles.brNone}`}>
+          <Row className="d-grid d-sm-flex m-0">
+            {Object.values(data.users).map((item: Iprops, index) => (
+              <Col
+                className={`${styles.numberBox_Title} ${styles.brNone}`}
+                key={index}
+              >
                 <CounterNew data={item} />
                 <section className={`${styles.counter_Text_Content}`}>
                   {item.text}

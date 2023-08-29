@@ -25,8 +25,6 @@ import Col from "react-bootstrap/Col";
 
 import Share from "./Share";
 
-import CounterNew from "./CounterNew";
-
 export interface Istate {
   startNum: Number;
   endNum: Number;
@@ -100,18 +98,7 @@ const index = () => {
       <div
         className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
       >
-        <Share />
-
-        {/* <Row>
-          {data.map((item: Istate) => (
-            <Col className={`${styles.numberBox_Title} ${styles.brNone}`}>
-              <CounterNew data={item} />
-              <section className={`${styles.counter_Text_Content}`}>
-                {item.text}
-              </section>
-            </Col>
-          ))}
-        </Row> */}
+        <Share users={data} />
       </div>
 
       <div className={`${styles.my_Container} ${styles.row_Title} row`}>
