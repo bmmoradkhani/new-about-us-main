@@ -4,10 +4,8 @@ import ScrollTrigger from "react-scroll-trigger";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import styles from "./AboutUsPage.module.scss";
-import { Istate as Iprops } from "./index";
-
-// import CounterNew from "./CounterNew";
+import styles from "./Share.module.scss";
+import { Istate as Iprops } from "../AboutUsPage/index";
 
 import { useRef } from "react";
 import { useCountUp } from "react-countup";
@@ -41,7 +39,9 @@ const Share: FC<UsersListProps> = (data: UsersListProps) => {
   const [counterOn, setCounterOn] = useState(false);
   console.log(data.users);
   return (
-    <section>
+    <section
+      className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
+    >
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(true)}
