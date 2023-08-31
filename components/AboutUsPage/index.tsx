@@ -95,9 +95,7 @@ export default function index() {
           <div className="">
             <h2 className="d-flex justify-content-center">
               About
-              <span className={`${styles.about_Persifund_span} ps-3`}>
-                Persifund
-              </span>
+              <span className={`${styles.about_Persifund_span} ps-3`}>Persifund</span>
             </h2>
             <div
               className={`${styles.about_Persifund_underline} d-flex justify-content-center`}
