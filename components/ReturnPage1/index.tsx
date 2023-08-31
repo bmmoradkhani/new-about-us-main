@@ -31,26 +31,19 @@ export default function Return1() {
 
   return (
     <div className={`${styles.paddingTop} mx-0 row`}>
-      {/*  */}
-
       <div className={`${styles} col-10 col-lg-11 col-xl-12 mx-auto`}>
-        {" "}
         <h1
           className={`${styles.titleH1} col-lg-12 col-xl-9 col-xxl-7 text-center`}
         >
           Effortless <span>Return</span> Is Just Start Of Retention.
         </h1>
       </div>
-      {/*  */}
       <div className={` ${styles.SubTitle} col-12 py-5`}>
         <p className={`${styles.SubTitleText} col-10 col-lg-10 col-xxl-5`}>
           Say goodbye to complicated return procedures <br /> with our
           user-friendly solution.
         </p>
       </div>
-
-      {/*  */}
-
       {activeJourney === 2 && (
         <>
           <div className={` ${styles.shopifyAppStoreBox} `}>
@@ -58,7 +51,6 @@ export default function Return1() {
               <section className={` ${styles.shopifyAppStoreTitle} `}>
                 FIND US ON THE
               </section>
-
               <section className={` ${styles.shopifyAppStoreImg} `}>
                 <Image alt="shopifyAppStore" src={shopifyAppStore} />
               </section>
@@ -66,7 +58,6 @@ export default function Return1() {
           </div>
         </>
       )}
-
       <div className={` ${styles.rankText} mx-auto `}>
         <p>
           In 2022, the number of online purchases that were returned increased
@@ -77,14 +68,13 @@ export default function Return1() {
         </p>
 
         <div className={` ${styles.vector} `}>
-          {/* vectorImg */}
           {activeJourney === 1 && (
             <>
               <Image
                 className={` ${styles.vectorImg} `}
                 src={vectorCustomer}
                 alt="vector"
-              />{" "}
+              />
             </>
           )}
 
@@ -94,7 +84,7 @@ export default function Return1() {
                 className={` ${styles.vectorBusinessImg} col-12`}
                 src={vectorBusiness}
                 alt="vector"
-              />{" "}
+              />
             </>
           )}
         </div>
@@ -136,20 +126,6 @@ export default function Return1() {
             </div>
           </>
         )}
-
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-        {/*  */}
-
         {activeJourney === 2 && (
           <>
             <div className={` ${styles.barChartBusiness} text-end col-11`}>
@@ -195,12 +171,7 @@ export default function Return1() {
             </div>
           </>
         )}
-        {/*  */}
-        {/*  */}
       </div>
-
-      {/* / */}
-
       {activeJourney === 2 && (
         <>
           <div className={`${styles.percent} col-12`}>
@@ -208,34 +179,25 @@ export default function Return1() {
               50% less
               <span>return-related messages</span>
             </section>
-
             <span className={`${styles.percentLine}`}></span>
-
             <section className={`${styles.rowTitle}`}>
               37%
               <span>return rate reduction</span>
             </section>
-
             <span className={`${styles.percentLine}`}></span>
-
             <section className={`${styles.rowTitle}`}>
               10 times
               <span>faster at processing returns</span>
             </section>
-
             <span className={`${styles.percentLine}`}></span>
-
             <section className={`${styles.rowTitle}`}>
               30%
               <span>of return value retained</span>
             </section>
           </div>
-          {/*  */}
           <div className={`${styles.explore}`}>Explore Your Journey</div>
         </>
       )}
-
-      {/*  */}
       <div
         className={` ${activeJourney === 1 && styles.CenterMain} ${
           activeJourney === 1 && styles.firstRow
@@ -247,11 +209,9 @@ export default function Return1() {
           } mx-auto`}
         >
           <h2>
-            {" "}
             {activeJourney === 1 && "Customer Journey"}
             {activeJourney === 2 && "CUSTOMER"}
           </h2>
-
           <section className={`${styles.customerBox} mx-auto my-4 `}>
             <section
               onClick={() => setActiveJourney(1)}
@@ -259,20 +219,17 @@ export default function Return1() {
             >
               <Image src={customerIcon} alt="customerIcon" />
             </section>
-
             <section className={` ${styles.leftCustomer} `}>
               <Image src={leftCustomer} alt="customer" />
             </section>
           </section>
         </div>
-        {/*  */}
         <div
           className={` ${activeJourney === 1 && styles.business} ${
             activeJourney === 2 && styles.business2
           } mx-auto`}
         >
           <h2>
-            {" "}
             {activeJourney === 1 && "Your Business Journey"}
             {activeJourney === 2 && "BUSINESS"}
           </h2>
@@ -288,16 +245,12 @@ export default function Return1() {
             >
               <Image src={businessIcon} alt="businessIcon" />
             </section>
-
             <section className={` ${styles.rightBusiness} `}>
               <Image src={rightBusiness} alt="Business" />
             </section>
           </section>
         </div>
       </div>
-
-      {/*  customer  */}
-
       {activeJourney === 1 && (
         <>
           <div
@@ -307,35 +260,28 @@ export default function Return1() {
               <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
                 Clear dashboard
               </h2>
-
               <p className={`${styles.oneComment} d-flex`}>
                 You can manage all the return requests in one place <br /> and
                 no need go out from app. There is no confusion and <br /> no
                 extra work.
               </p>
             </div>
-
             <div
               className={`${styles.manageReturns} mx-auto text-center mt-5 mt-lg-0`}
             >
               <Image src={manageReturns} alt="manageReturns"></Image>
             </div>
           </div>
-
-          {/* customer  2  */}
-
           <div
             className={` ${styles.CenterMain} ${styles.payment} ${styles.marginTop} col-12 d-lg-flex `}
           >
             <div className={`${styles.paymentImg} mx-auto d-flex mt-5 mt-lg-0`}>
               <Image src={payment} alt="payment"></Image>
             </div>
-
             <div className={`${styles} mx-auto `}>
               <h2 className={`${styles.twoTitle}`}>
                 Easy and Fast, But Powerful
               </h2>
-
               <p className={`${styles.twoComment} d-flex d-xl-block `}>
                 You can handle each return Just by some simple <br />
                 clicks. on the other side, you have a full power to <br />
@@ -345,9 +291,6 @@ export default function Return1() {
               </p>
             </div>
           </div>
-
-          {/* customer  3   */}
-
           <div
             className={` ${styles.CenterMain} ${styles.marginTop} ${styles.row} col-12 d-md-flex `}
           >
@@ -355,13 +298,11 @@ export default function Return1() {
               <h2 className={`${styles.threeTitle} d-flex d-md-block`}>
                 Smart Return solution
               </h2>
-
               <p className={`${styles.threeComment} d-flex `}>
                 With Persifund you can decide how your customer return the{" "}
                 <br /> items. You have different options
               </p>
             </div>
-
             <div
               className={`${styles.factor} ${styles.marginBottom} mx-auto d-flex mt-5 mt-lg-0`}
             >
@@ -370,9 +311,6 @@ export default function Return1() {
           </div>
         </>
       )}
-
-      {/*  business */}
-
       {activeJourney === 2 && (
         <>
           <div
@@ -382,7 +320,6 @@ export default function Return1() {
               <h2 className={`${styles.oneTitleBusiness} my-5`}>
                 No need more <br /> than an emaiL...
               </h2>
-
               <p className={`${styles.oneCommentBusiness} d-flex`}>
                 Customers have the ability to initiate a return <br /> at any
                 time and in a convenient manner. All the <br /> thing that
@@ -390,7 +327,6 @@ export default function Return1() {
                 use when they shop.
               </p>
             </div>
-
             <div className="">
               <Image
                 style={{ position: "absolute", bottom: "200px", right: "80px" }}
@@ -398,16 +334,12 @@ export default function Return1() {
                 alt="vectorCenter1"
               ></Image>
             </div>
-
             <div
               className={`${styles.exchange} mx-auto text-center mt-5 mt-lg-0`}
             >
               <Image src={exchange} alt="exchange"></Image>
             </div>
           </div>
-
-          {/* business 2  */}
-
           <div
             className={` ${styles.CenterMain} ${styles.brandName} ${styles.marginTop} col-12 d-flex `}
           >
@@ -416,12 +348,10 @@ export default function Return1() {
             >
               <Image src={brandName} alt="brand"></Image>
             </div>
-
             <div className={`${styles} mx-auto `}>
               <h2 className={`${styles.twoTitleBusiness} my-5`}>
                 More convenient for <br /> customers than ever <br /> before
               </h2>
-
               <p className={`${styles.twoCommentBusiness} d-flex `}>
                 Customers can select which items to <br /> return from a
                 comprehensive list of all <br /> their purchases, using various
@@ -429,9 +359,6 @@ export default function Return1() {
               </p>
             </div>
           </div>
-
-          {/* business 3   */}
-
           <div
             className={` ${styles.CenterMain} ${styles.marginBottom} ${styles.marginTop} col-12 d-md-flex `}
           >
@@ -441,14 +368,12 @@ export default function Return1() {
               >
                 Multi return solution
               </h2>
-
               <p className={`${styles.threeCommentBusiness}  d-flex `}>
                 Customers are able to choose the option <br /> that best suits
                 their needs and schedule, <br /> leading to increased
                 satisfaction and a <br /> positive customer experience.
               </p>
             </div>
-
             <div className={`${styles.businessFactor} mx-auto d-flex mt-lg-0`}>
               <div className={`${styles.businessFactorImg}`}>
                 <Image src={businessFactor} alt="businessFactor"></Image>
@@ -457,8 +382,6 @@ export default function Return1() {
           </div>
         </>
       )}
-
-      {/*  */}
     </div>
   );
 }

@@ -57,49 +57,44 @@ export default function index() {
     },
     {
       startNum: 1,
-      endNum: 3.1,
+      endNum: 30,
       duration: 4,
       delay: 1,
-      suffix: " $",
-      decimals: 1,
-      text: "save logistics costs per RMA",
+      suffix: "%",
+      text: "Return rate reduction",
     },
   ];
 
   return (
-    <div className={` ${styles.main} `}>
-      <div className={` ${styles.ourMission} `}>
-        <h1 className={` ${styles.ourMission_Text} `}>Our Mission</h1>
+    <div className={` ${styles.main}`}>
+      <div className={` ${styles.ourMission}`}>
+        <h1 className={` ${styles.ourMission_Text}`}>Our Mission</h1>
       </div>
-
       <div className={`${styles.storeTitle} d-flex justify-content-center`}>
-        <div className={`${styles.storeTitle_Text} `}>
+        <div className={`${styles.storeTitle_Text}`}>
           <p>We enable stores to build wonderful return experience</p>
         </div>
       </div>
-
       <div className={`${styles}`}>
         <Image src={point} className="" alt="point" />
       </div>
-
       <div className={`${styles.numberTitle}`}>
         <p>We're backed by incredible Numbers</p>
       </div>
-
       <Share users={data} />
-
       <div className={`${styles.my_Container} ${styles.row_Title} row`}>
         <div
           className={`${styles.about_Persifund} col-12 col-md-6 col-lg-5 my-3 my-md-0 p-0`}
         >
-          <div className="">
+          <div>
             <h2 className="d-flex justify-content-center">
-              About
-              <span className={`${styles.about_Persifund_span} ps-3`}>Persifund</span>
+              {"About"}
+              <span className={`${styles.about_Persifund_span} ps-3`}>
+                {"Persifund"}
+              </span>
             </h2>
             <div
-              className={`${styles.about_Persifund_underline} d-flex justify-content-center`}
-            >
+              className={`${styles.about_Persifund_underline} d-flex justify-content-center`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="285"
@@ -130,7 +125,6 @@ export default function index() {
             </div>
           </div>
         </div>
-
         <div
           className={`${styles.about_Persifund_Context} col-12 col-md-6 col-lg-5 p-0`}
         >
@@ -152,31 +146,22 @@ export default function index() {
           </p>
         </div>
       </div>
-
       <div className={`${styles.centerTitle}`}>
         <h1>Why we are here</h1>
       </div>
-
-      {/* /////////////////////////////////////   /////////////////////////////////////// */}
-
       <div className={`${styles.center_Box}`}>
-        {/* //////////////////////////////      1       ///////////////////////////////// */}
-
         <div className={`${styles.efficiency} m-0`}>
           <div
             className={`${styles.efficiency_Title} p-0 col-12 col-sm-5 text-center text-sm-end`}
           >
             <h2>Efficiency</h2>
           </div>
-
           <div className={`${styles.icon} p-0  d-none d-md-inline`}>
-            <div className={`${styles.lineIcon_Energy}`}></div>
-
+            <div className={`${styles.lineIcon_Energy}`}>{""}</div>
             <div className={`${styles.Icon_Energy}`}>
               <Image src={energyIcon} className="" alt="energyIcon" />
             </div>
           </div>
-
           <div className={`${styles.efficiency_context} p-0 col-12 col-sm-5 `}>
             <p>
               Our return management system is designed to optimize your
@@ -186,9 +171,6 @@ export default function index() {
             </p>
           </div>
         </div>
-
-        {/* //////////////////////////////      2        ////////////////////////////////////// */}
-
         <div className={`${styles.seamless} m-0 `}>
           <div className={`${styles.seamless_context} p-0 col-12 col-sm-5`}>
             <p>
@@ -197,7 +179,6 @@ export default function index() {
               smooth and cohesive experience for both you and your customers.
             </p>
           </div>
-
           <div className={`${styles.icon_seamless} p-0 d-none d-md-inline`}>
             <div className={`${styles.lineIcon_Energy_seamless}`}></div>
 
@@ -205,31 +186,24 @@ export default function index() {
               <Image src={integration} className="" alt="Picture of the " />
             </div>
           </div>
-
           <div
             className={`${styles.seamless_Title} p-0 col-12 col-sm-5 text-center text-sm-start`}
           >
             <h2>Seamless Integration</h2>
           </div>
         </div>
-
-        {/* //////////////////////////////      3        ///////////////////////////////////////////// */}
-
         <div className={`${styles.costSavings} m-0`}>
           <div
             className={`${styles.costSavings_Title} p-0 col-12 col-sm-5 text-center text-sm-end`}
           >
             <h2>Cost Savings</h2>
           </div>
-
           <div className={`${styles.icon} p-0  d-none d-md-inline`}>
-            <div className={`${styles.lineIcon_Energy}`}></div>
-
+            <div className={`${styles.lineIcon_Energy}`}>{""}</div>
             <div className={`${styles.Icon_Energy}`}>
               <Image src={save_Money} alt="save Money" />
             </div>
           </div>
-
           <div className={`${styles.costSavings_context} p-0 col-12 col-sm-5`}>
             <p>
               Our solution is built to help you save money. By streamlining your
@@ -239,9 +213,6 @@ export default function index() {
             </p>
           </div>
         </div>
-
-        {/* /////////////////////////////       4       ////////////////////////////////////////////// */}
-
         <div
           className={`${styles.environmental} justify-content-center m-0 d-flex flex-column-reverse flex-sm-row`}
         >
@@ -255,41 +226,33 @@ export default function index() {
               environment
             </p>
           </div>
-
           <div
-            className={`${styles.icon_environmental} p-0  d-none d-md-inline`}
+            className={`${styles.icon_environmental} p-0 d-none d-md-inline`}
           >
-            <div className={`${styles.lineIcon_Energy_environmental}`}></div>
+            <div className={`${styles.lineIcon_Energy_environmental}`}>{""}</div>
 
             <div className={`${styles.Icon_Energy_environmental}`}>
-              <Image src={fuel} className="" alt="fuel" />
+              <Image src={fuel} alt="fuel" />
             </div>
           </div>
-
           <div
             className={`${styles.environmental_Title} p-0 col-12 col-sm-5 text-center text-sm-start`}
           >
             <h2>Environmental Responsibility</h2>
           </div>
         </div>
-
-        {/* ////////////////////////////       5       /////////////////////////////////////////////// */}
-
         <div className={`${styles.dedicated} m-0`}>
           <div
             className={`${styles.dedicated_Title} p-0 col-12 col-sm-5 text-center text-sm-end`}
           >
             <h2>Dedicated Support</h2>
           </div>
-
           <div className={`${styles.icon} p-0 d-none d-md-inline`}>
-            <div className={`${styles.lineIcon_Energy}`}></div>
-
+            <div className={`${styles.lineIcon_Energy}`}>{""}</div>
             <div className={`${styles.Icon_Energy}`}>
-              <Image src={handshake} className="" alt="Picture of the " />
+              <Image src={handshake} alt="Picture of the " />
             </div>
           </div>
-
           <div className={`${styles.dedicated_context} p-0 col-12 col-sm-5`}>
             <p>
               We are committed to your success. Our team of dedicated experts is
@@ -300,8 +263,6 @@ export default function index() {
           </div>
         </div>
       </div>
-      {/* /////////////////////////////////////////////////////////////////////////// */}
-
       <div
         className={`${styles.centerTitle_Together} d-flex justify-content-center`}
       >
@@ -310,9 +271,6 @@ export default function index() {
           make returns a hassle-free process for you and your valued customers.
         </h1>
       </div>
-
-      {/* ////////////////////////////////////////////// */}
-
       <div
         className={`${styles} row mx-0 `}
         style={{ position: "relative", height: "600px" }}
@@ -331,7 +289,6 @@ export default function index() {
             style={{ width: "100%", height: "600px" }}
           />
         </div>
-
         <div
           className={`${styles.delight_Background}`}
           style={{
@@ -346,7 +303,6 @@ export default function index() {
             style={{ width: "100%", height: "580px" }}
           />
         </div>
-
         <div
           className={`${styles.delight_Background}`}
           style={{
@@ -359,7 +315,7 @@ export default function index() {
         </div>
 
         <div
-          className={`${styles.delight} ${styles}  col-12 col-lg-6 col-xl-7 p-0`}
+          className={`${styles.delight} ${styles} col-12 col-lg-6 col-xl-7 p-0`}
           style={{
             display: "flex",
             alignItems: "center",
