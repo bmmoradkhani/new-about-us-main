@@ -66,7 +66,6 @@ export default function Return1() {
           </div>
         </>
       )}
-      {/*  */}
 
       <div className={` ${styles.rankText} mx-auto `}>
         <p>
@@ -89,7 +88,6 @@ export default function Return1() {
             </>
           )}
 
-          {/* vectorBusinessImg */}
           {activeJourney === 2 && (
             <>
               <Image
@@ -99,12 +97,8 @@ export default function Return1() {
               />{" "}
             </>
           )}
-
-          {/*  */}
         </div>
 
-        {/*  */}
-        {/*  */}
         {activeJourney === 1 && (
           <>
             <div className={` ${styles.barChart} text-end col-11`}>

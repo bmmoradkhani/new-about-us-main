@@ -14,20 +14,7 @@ import wave from "../../public/assets/images/about-us/wave.png";
 import wave1 from "../../public/assets/images/about-us/wave1.png";
 import wave2 from "../../public/assets/images/about-us/wave2.png";
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-// <<<<<<< HEAD
 import Share from "../Share/Share";
-// =======
-// import persifundLine from "../../public/assets/images/about-us/Persifund line.png";
-
-// import shopify from "../../public/assets/images/about-us/unnamed.png";
-// // import shopify from "../../public/assets/images/about-us/shopify.png";
-// import vector from "../../public/assets/images/about-us/Vector.png";
-
-// import Share from "./Share";
-// >>>>>>> 966c45ac46aeab638fe2478a96bf44ce02888732
 
 export interface Istate {
   startNum: Number;
@@ -39,7 +26,7 @@ export interface Istate {
   text: String;
 }
 
-const index = () => {
+export default function index() {
   const data: Istate[] = [
     {
       startNum: 1,
@@ -99,15 +86,7 @@ const index = () => {
         <p>We're backed by incredible Numbers</p>
       </div>
 
-{/* <<<<<<< HEAD */}
       <Share users={data} />
-{/* =======
-      <div
-        className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
-      >
-        <Share users={data} />
-      </div>
->>>>>>> 966c45ac46aeab638fe2478a96bf44ce02888732 */}
 
       <div className={`${styles.my_Container} ${styles.row_Title} row`}>
         <div
@@ -115,11 +94,11 @@ const index = () => {
         >
           <div className="">
             <h2 className="d-flex justify-content-center">
-              About{" "}
+              About
               <span className={`${styles.about_Persifund_span} ps-3`}>
                 Persifund
               </span>
-            </h2>{" "}
+            </h2>
             <div
               className={`${styles.about_Persifund_underline} d-flex justify-content-center`}
             >
@@ -355,8 +334,6 @@ const index = () => {
           />
         </div>
 
-        {/*  */}
-
         <div
           className={`${styles.delight_Background}`}
           style={{
@@ -371,8 +348,6 @@ const index = () => {
             style={{ width: "100%", height: "580px" }}
           />
         </div>
-
-        {/*  */}
 
         <div
           className={`${styles.delight_Background}`}
@@ -401,5 +376,4 @@ const index = () => {
       </div>
     </div>
   );
-};
-export default index;
+}
