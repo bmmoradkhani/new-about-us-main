@@ -47,7 +47,7 @@ export interface Istate {
   text: String;
 }
 
-export default function plan() {
+export default function Plan() {
   const data: Istate[] = [
     {
       startNum: 1,
