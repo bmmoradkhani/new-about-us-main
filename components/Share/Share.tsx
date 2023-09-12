@@ -16,7 +16,7 @@ export interface UsersListProps {
 
 const CounterNew = (props: any) => {
   const {
-    data: { startNum, endNum, duration, delay, decimals, suffix },
+    data: { startNum, endNum, duration, decimals, suffix },
   } = props;
   const countUpRef = useRef(null);
 
@@ -24,7 +24,6 @@ const CounterNew = (props: any) => {
     ref: countUpRef,
     start: startNum,
     end: endNum,
-    delay,
     duration,
     decimals,
     suffix,

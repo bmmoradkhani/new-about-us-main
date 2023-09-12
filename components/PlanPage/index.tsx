@@ -37,6 +37,7 @@ import vectorCenter2 from "../../public/assets/images/plan/Business/Vector cente
 import vectorCenter3 from "../../public/assets/images/plan/Business/Vector center 3.png";
 import Share from "../Share/Share";
 
+
 export interface Istate {
   startNum: Number;
   endNum: Number;
@@ -94,6 +95,7 @@ export default function Plan() {
           user-friendly solution.
         </p>
       </div>
+
       {/* {activeJourney === 2 && (
         <>
           <div className={` ${styles.shopifyAppStoreBox} `}>
@@ -108,18 +110,23 @@ export default function Plan() {
           </div>
         </>
       )} */}
-      <div className={` ${styles.rankText} mx-auto `}>
-        <p>
-          In 2022, the number of online purchases that were returned increased
-          to 22.3% <br /> from 20.8% in 2021, which posed a significant threat
-          to retailers' revenue <br /> as it resulted in a 18% decrease. This is
-          particularly concerning <br /> for retailers as online sales are
-          growing at a faster <br /> pace than anticipated.
-        </p>
+      <div className={` ${styles.rankText} mx-auto p-0`}>
+        <div className="row p-0" style={{}}>
+          <p className="col p-0 m-0">
+            In 2022, the number of online purchases that were returned increased
+            to 22.3% <br /> from 20.8% in 2021, which posed a significant threat
+            to retailers' revenue <br /> as it resulted in a 18% decrease. This
+            is particularly concerning <br /> for retailers as online sales are
+            growing at a faster <br /> pace than anticipated.
+          </p>
+        </div>
 
-        <div className="">
+        <div
+          className="row p-0"
+          style={{ position: "relative", bottom: "130px", right: "25px" }}
+        >
           <Image
-            className={` ${styles.vectorImg} `}
+            className={` ${styles.vectorImg} col p-0`}
             src={diagram}
             alt="diagram"
           />
