@@ -210,76 +210,80 @@
   }
 }
 
-@media screen and (min-width: 3500px) {
-  .titleH1 {
-    font-size: 150px !important;
-  }
+// @media screen and (min-width: 3500px) {
+//   .titleH1 {
+//     font-size: 150px !important;
+//   }
 
-  .SubTitleText {
-    font-size: 70px !important;
-  }
+//   .SubTitleText {
+//     font-size: 70px !important;
+//   }
 
-  .rankText p {
-    font-size: 30px !important;
-  }
+//   .rankText p {
+//     font-size: 30px !important;
+//   }
 
-  .manageReturns img {
-    width: 700px !important;
-    height: 500px !important;
-  }
+//   .manageReturns img {
+//     width: 700px !important;
+//     height: 500px !important;
+//   }
 
-  .oneTitle {
-    font-size: 130px !important;
-  }
-  .oneComment {
-    font-size: 55px !important;
-  }
+//   .oneTitle {
+//     font-size: 130px !important;
+//   }
+//   .oneComment {
+//     font-size: 55px !important;
+//   }
 
-  .payment img {
-    width: 700px !important;
-    height: 500px !important;
-  }
+//   .payment img {
+//     width: 700px !important;
+//     height: 500px !important;
+//   }
 
-  .twoTitle {
-    font-size: 120px !important;
-  }
+//   .twoTitle {
+//     font-size: 120px !important;
+//   }
 
-  .twoComment {
-    font-size: 60px !important;
-  }
+//   .twoComment {
+//     font-size: 60px !important;
+//   }
 
-  .threeTitle {
-    font-size: 130px !important;
-  }
+//   .threeTitle {
+//     font-size: 130px !important;
+//   }
 
-  .threeComment {
-    font-size: 60px !important;
-  }
+//   .threeComment {
+//     font-size: 60px !important;
+//   }
 
-  .factor img {
-    width: 600px !important;
-    height: 660px !important;
-  }
+//   .factor img {
+//     width: 600px !important;
+//     height: 660px !important;
+//   }
 
-  .percent {
-    margin-top: 400px !important;
-  }
-}
+//   .percent {
+//     margin-top: 400px !important;
+//   }
+// }
 
-.firstRow {
-  margin-top: 250px !important;
-}
+// .firstRow {
+//   margin-top: 250px !important;
+// }
 
 .paddingTop {
   padding-top: 200px;
 }
 
 .titleH1 {
-  color: #000;
+  color: #0e215a;
   font-size: 90px;
   font-family: Cal Sans;
   font-weight: 600;
   margin: 0 auto;
+
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
 }
 
 .titleH1 span {
@@ -299,11 +303,14 @@
 .SubTitleText {
   display: flex;
   flex-direction: column;
-  color: #000206;
+
+  color: #162c71;
   text-align: center;
-  font-size: 35px;
   font-family: Poppins;
+  font-size: 35px;
+  font-style: normal;
   font-weight: 500;
+  line-height: normal;
 }
 
 .rankText {
@@ -381,50 +388,51 @@
 }
 
 .explore {
-  color: #00003e;
   font-size: 70px;
   font-family: Cal Sans;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin: 160px 0;
+  margin: 120px 0 110px;
   text-align: center;
+
+  color: $shade4-color;
 }
 
-.shopifyAppStoreBox {
-  width: 100%;
-  margin: 50px 0 140px 0;
-}
+// .shopifyAppStoreBox {
+//   width: 100%;
+//   margin: 50px 0 140px 0;
+// }
 
-.shopifyAppStore {
-  width: 254.473px;
-  height: 66.5px;
-  flex-shrink: 0;
-  background-color: #000000;
-  border-radius: 8px;
-}
+// .shopifyAppStore {
+//   width: 254.473px;
+//   height: 66.5px;
+//   flex-shrink: 0;
+//   background-color: #000000;
+//   border-radius: 8px;
+// }
 
-.shopifyAppStoreTitle {
-  position: relative;
-  top: 4px;
-  left: 60px;
-  display: inline;
-  color: #fff;
-  text-align: center;
-  font-size: 9px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+// .shopifyAppStoreTitle {
+//   position: relative;
+//   top: 4px;
+//   left: 60px;
+//   display: inline;
+//   color: #fff;
+//   text-align: center;
+//   font-size: 9px;
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+// }
 
-.shopifyAppStoreImg {
-  width: 225.05px;
-  height: 39.482px;
-  margin: 0 auto;
-  position: relative;
-  bottom: 11px;
-}
+// .shopifyAppStoreImg {
+//   width: 225.05px;
+//   height: 39.482px;
+//   margin: 0 auto;
+//   position: relative;
+//   bottom: 11px;
+// }
 
 .vector {
   position: relative;
@@ -446,132 +454,142 @@
 }
 
 .customer {
-  background: linear-gradient(to right, #7a00d0 25%, #ef007e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 32px;
+  color: #2a438f;
   font-family: Cal Sans;
-  font-weight: 600;
-}
-
-.customer2 {
-  background: linear-gradient(to right, #7a00d0 25%, #ef007e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 32px;
-  font-family: Cal Sans;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  // margin-bottom: 19.01px;
+}
+
+.customerBox {
+  margin-top: 18px;
+}
+
+.customer2 {
+  color: #2a438f;
+  font-family: Cal Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  // margin-bottom: 25.01px;
+}
+
+.customerBox2 {
+  margin-top: 32px;
 }
 
 .business {
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 500;
-  color: #010160;
+  color: #2a438f;
+  font-family: Cal Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  // margin-bottom: 24.42px;
+}
+
+.businessBox {
+  // margin-top: 19.7px;
+  margin-top: 32.7px;
 }
 
 .business2 {
   font-size: 32px;
+  color: #2a438f;
   font-family: Cal Sans;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  background: linear-gradient(
-      0deg,
-      rgba(112, 112, 112, 0.5),
-      rgba(112, 112, 112, 0.5)
-    ),
-    linear-gradient(
-      90.09deg,
-      rgba(122, 0, 208, 0.3) 21.51%,
-      rgba(239, 0, 126, 0.3) 83.94%
-    );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // margin-bottom: 17.42px;
 }
 
-.customerBox {
-  width: 54.254px;
-  height: 54.254px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, #7300d4 0%, #ef007e 100%);
+.businessBox2 {
+  margin-top: 19px;
 }
 
 .customerIcon {
   text-align: center;
+  // cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.customerIcon img {
   cursor: pointer;
 }
 
 .leftCustomer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: end;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   position: relative;
-  left: 21px;
-  top: 5px;
+  left: -12px;
+  bottom: 36px;
 }
 
 .businessBox {
-  width: 54.254px;
-  height: 54.254px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #004fc5 0%, #ff76f1 170%);
+  //   width: 54.254px;
+  //   height: 54.254px;
+  //   border-radius: 50%;
+  //   background: linear-gradient(180deg, #004fc5 0%, #ff76f1 170%);
 }
 
-.businessBoxStyle {
-  width: 54.254px;
-  height: 54.254px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #005f4b 0%, #95dfcc 170%);
-}
+// .businessBoxStyle {
+//   width: 54.254px;
+//   height: 54.254px;
+//   border-radius: 50%;
+//   background: linear-gradient(180deg, #005f4b 0%, #95dfcc 170%);
+// }
 
 .businessIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 13px;
+  text-align: center;
+  // position: relative;
+  // top: 13px;
+}
+
+.businessIcon img {
   cursor: pointer;
 }
 
 .rightBusiness {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   position: relative;
-  right: 17px;
-  top: 24.8px;
+  right: 3px;
+  bottom: 1px;
 }
 
 .oneTitle {
   color: #010160;
-  font-size: 50px;
   font-family: Cal Sans;
+  font-size: 35px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  position: relative;
-  bottom: 47px;
-  justify-content: center;
+  width: 396.32px;
+  text-align: left;
 }
 
 .oneComment {
   color: #010160;
-  font-size: 20px;
+  text-align: justify;
   font-family: Poppins;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  justify-content: center;
-  align-items: center;
+  width: 419.046px;
 }
 
-.manageReturns img {
-  width: 425.892px;
-  height: 284.448px;
-}
+// .manageReturns img {
+//   width: 425.892px;
+//   height: 284.448px;
+// }
 
 .twoTitle {
   position: relative;
@@ -740,4 +758,30 @@
   height: 330px;
   background: #fff;
   box-shadow: 0px 0px 0px 35px whitesmoke;
+}
+
+.twoTitle_new {
+  color: #010160;
+  font-family: Cal Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 429.585px;
+}
+
+.ulList {
+  color: #010160;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 419.046px;
+  padding: 0 20px;
+}
+
+.ulList li {
+  padding: 10px 0;
 }

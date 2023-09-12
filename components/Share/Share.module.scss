@@ -41,12 +41,12 @@
   }
 }
 
-@media screen and (min-width: 260px) and (max-width: 575.98px) {
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
   .counter_Text_Content {
     color: #f3f3f3;
     text-align: center;
     font-family: Inter;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -67,7 +67,7 @@
     content: "";
     border-bottom: 1px solid #f3f3f3 !important;
 
-    width: 147px;
+    width: 230px !important;
     height: 1px;
     display: block;
     margin: 46px auto 0;
@@ -78,24 +78,74 @@
   }
 
   .numberBox_Title {
-    padding: 42px 0 0 !important;
+    padding: 38px 0 0 !important;
   }
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (min-width: 260px) and (max-width: 575.98px) {
+  .counter_Text_Content {
+    color: #f3f3f3;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 17.5px !important;
+  }
+
+  .counter_Text {
+    color: #fdf5e2;
+    font-family: Inter;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+  }
+
+  .numberBox_Title::after {
+    content: "";
+    border-bottom: 1px solid #f3f3f3 !important;
+
+    width: 200px !important;
+    height: 1px;
+    display: block;
+    margin: 46px auto 0;
+  }
+
+  .numberBox_Title:last-child::after {
+    border: none !important;
+  }
+
+  .numberBox_Title {
+    padding: 38px 0 0 !important;
+  }
+}
+
+// @media screen and (max-width: 575.98px) {
+//   .numberBox {
+//     display: block !important;
+//     height: 776.685px !important;
+//   }
+
+//   .numberBox_Title {
+//     font-size: 58px !important;
+//   }
+// }
+
+@media screen and (max-width: 991.98px) {
   .numberBox {
     display: block !important;
     height: 776.685px !important;
   }
 
   .numberBox_Title {
-    // padding: 45px 0 !important;
-    // padding: 50px 0 !important;
     font-size: 58px !important;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .brNone {
     font-size: 20px !important;
     border-right: 1px solid #fcf7f4 !important;
@@ -115,6 +165,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    width: max-content;
   }
 
   .counter_Text {
@@ -127,46 +178,25 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .counter_Text_Content {
-    width: max-content;
-  }
-}
+// @media screen and (min-width: 576px) and (max-width: 767.98px) {
+//   .numberBox_Title {
+//     font-size: 22px !important;
+//     padding: unset !important;
+//   }
 
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-  .numberBox_Title {
-    font-size: 22px !important;
-    padding: unset !important;
-  }
+//   .counter_Text {
+//     font-size: 25px !important;
+//   }
 
-  .counter_Text {
-    font-size: 25px !important;
-  }
-
-  .counter_Text_Content {
-    font-size: 12px !important;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .numberBox_Title {
-    font-size: 38px !important;
-    padding: 0 11px !important;
-  }
-
-  .counter_Text {
-    font-size: 34px !important;
-  }
-
-  .counter_Text_Content {
-    font-size: 10.5px !important;
-  }
-}
+//   .counter_Text_Content {
+//     font-size: 12px !important;
+//   }
+// }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
   .numberBox_Title {
     font-size: 40px !important;
-    padding: 0 15px !important;
+    padding: 0 3vw !important;
   }
 
   .counter_Text {
@@ -180,7 +210,7 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
   .numberBox_Title {
-    padding: 0 29px !important;
+    padding: 0 4vw !important;
   }
 
   .counter_Text {
@@ -207,6 +237,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 0 45px;
+  padding: 0 4vw;
   text-align: center;
 }

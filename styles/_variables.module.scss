@@ -1,16 +1,29 @@
-$primary-color: #3d5698;
+$primary-color: #35498b;
+$shade2-color: #314381;
+$shade3-color: #102d7e;
+$shade4-color: #071f62;
+$grey-color: #dadada;
+$red2-color: #e19a95;
+$title-color-main: #0e2148;
+$title-font: "Cal Sans";
+$service-title-font: "Inter";
 $primary-text-color: #fff;
 $section-color: #1d1d1f;
-$background-color: #f1f1f1;
+$background-color: #faf6f3;
+$box-title-color: #314381;
 $secondary-background-color: #fcf7f4;
 $title-background-color: #7fc4b5;
-$service-title-color: #7fc4b5;
+$service-title-color: #102d7e;
+$service-sub_title-color: #2a438f;
 $title-font-size: 3rem;
+$title-color: #fdf5e2;
+
 $poppins-Light: "Poppins-Light";
 $poppins-SemiBold: "Poppins-SemiBold";
 $CalSans-SemiBold: "CalSans-SemiBold";
-$header-height: 90px;
-$title-color: #fdf5e2;
+
+$header-height: 72px;
+$red-banner-height: 43px;
 
 // responsive variable
 $container-sm: 4vw;
@@ -20,7 +33,7 @@ $fluid-container-md: 5px;
 @mixin buttonStyle($x, $borderColor) {
   font-size: 2 * $x;
   padding: 2 * $x 4 * $x;
-  border-radius: 3 * $x $x 3 * $x $x;
+  border-radius: 4 * $x 1.3 * $x 1.3 * $x 4 * $x;
   // border:none ;
   border: 1px solid $borderColor;
   color: #fff;
@@ -28,6 +41,41 @@ $fluid-container-md: 5px;
 
   &:hover {
     border-radius: 24px;
+  }
+}
+
+@mixin button($fontSize) {
+  // min-height: $x;
+  // max-height: $x;
+  font-size: $fontSize;
+  padding-top: $fontSize * 1.25;
+  padding-bottom: $fontSize * 1.25;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: $fontSize * 2;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin buttonRoundRight($fontSize) {
+  @include button($fontSize);
+  border-radius: $fontSize/1.3 $fontSize * 2 $fontSize * 2 $fontSize/1.3;
+
+  @media (max-width: 575.98px) {
+    border-radius: $fontSize * 2 $fontSize * 2 $fontSize * 2 $fontSize * 2;
+  }
+}
+
+@mixin buttonRoundLeft($fontSize) {
+  @include button($fontSize);
+  border-radius: $fontSize * 2 $fontSize/1.3 $fontSize/1.3 $fontSize * 2;
+
+  @media (max-width: 575.98px) {
+    border-radius: $fontSize * 2 $fontSize * 2 $fontSize * 2 $fontSize * 2;
   }
 }
 
@@ -52,7 +100,7 @@ $fluid-container-md: 5px;
 }
 
 @mixin marginLeft {
-  margin-left: 50px;
+  margin-left: 0;
 }
 
 @mixin carouselStyleInMobile($left) {
@@ -61,6 +109,9 @@ $fluid-container-md: 5px;
   text-align: center;
   transform: translateX(-50%);
   margin-left: 0;
+}
+
+@media (max-width: 575.98px) {
 }
 
 @media (max-width: 992px) {

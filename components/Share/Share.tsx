@@ -47,7 +47,7 @@ const Share: FC<UsersListProps> = (data: UsersListProps) => {
         onExit={() => setCounterOn(true)}
       >
         {counterOn && (
-          <Row className="d-grid d-sm-flex m-0">
+          <Row className="d-grid d-lg-flex m-0">
             {Object.values(data.users).map((item: Iprops, index) => (
               <Col
                 className={`${styles.numberBox_Title} ${styles.brNone}`}

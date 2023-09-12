@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 // components
-import ReturnPage1 from "../../components/ReturnPage1";
+import ReturnPage1 from "../../components/PlanPage";
 
 // import styles from '../styles/Home.module.scss';
 
