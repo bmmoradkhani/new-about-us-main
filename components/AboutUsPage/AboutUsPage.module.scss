@@ -724,6 +724,11 @@
   .storeTitle_Text p {
     line-height: 40px !important;
   }
+
+  .about_Persifund_underline {
+    position: relative !important;
+    bottom: 5vh !important;
+  }
 }
 
 @media screen and (min-width: 260px) and (max-width: 575.98px) {
@@ -769,8 +774,3 @@
     width: 1014.736px;
   }
 }
-
-// .about_Persifund_span::after {
-//   content: "";
-//   background-image: url("../../public/assets/images/about-us/about persifund underline.svg");
-// }
