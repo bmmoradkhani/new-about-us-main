@@ -68,7 +68,7 @@ export default function index() {
       <div className={` ${styles.ourMission}`}>
         <h1 className={` ${styles.ourMission_Text}`}>Our Mission</h1>
       </div>
-      <div className={`${styles.storeTitle} d-flex justify-content-center`}>
+      <div className={`${styles.storeTitle} d-flex justify-content-center `}>
         <div className={`${styles.storeTitle_Text}`}>
           <p className="m-0">
             We enable stores to build wonderful return experience
@@ -82,7 +82,7 @@ export default function index() {
         <p>We're backed by incredible Numbers</p>
       </div>
       <Share users={data} />
-      <div className={`${styles.my_container} ${styles.row_Title} row`}>
+      <div className={` ${styles.row_Title} row my_container`}>
         <div
           className={`${styles.about_Persifund} col-12 col-lg-6 col-xxl-5 my-3 my-md-0 p-0`}
         >
@@ -92,15 +92,16 @@ export default function index() {
               <span className={`${styles.about_Persifund_span} ps-3`}>
                 {"Persifund"}
 
-                {/* <div
+                <div
                   className={`${styles.about_Persifund_underline} d-flex justify-content-center`}
+                  style={{ width: "100%" }}
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="285"
-                    height="14"
+                    // width="279.581"
+                    height="12"
                     viewBox="0 0 285 14"
                     fill="none"
+                    style={{ width: "4em" }}
                   >
                     <path
                       d="M2.80176 11.056C28.618 8.49995 93.3559 2.90848 145.784 2.90845C197.7 2.90841 232.169 2.90845 282.383 7.99891"
@@ -126,7 +127,7 @@ export default function index() {
                       </linearGradient>
                     </defs>
                   </svg>
-                </div> */}
+                </div>
               </span>
             </h2>
 
@@ -187,7 +188,7 @@ export default function index() {
       <div className={`${styles.centerTitle}`}>
         <h1>Why we are here</h1>
       </div>
-      <div className={`${styles.center_Box} ${styles.my_container}`}>
+      <div className={`${styles.center_Box} my_container`}>
         <div className={`${styles.efficiency} m-0`}>
           <div
             className={`${styles.efficiency_Title} p-0 col-12 col-lg-5 text-center text-lg-end `}

@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 576px) {
   .CenterMain {
-    margin-top: 250px;
+    margin-top: 118px;
   }
 }
 
@@ -516,8 +516,8 @@
 .customerIcon {
   text-align: center;
   // cursor: pointer;
-  position: relative;
-  z-index: 10;
+  // position: relative;
+  // z-index: 10;
 }
 
 .customerIcon img {
@@ -530,9 +530,13 @@
   // justify-content: center;
   // align-items: center;
   position: relative;
-  left: -12px;
-  bottom: 36px;
+  right: 12px;
+  bottom: 1px;
 }
+
+// .centerLineCerve_Icon_Box::after {
+//   content: "1";
+// }
 
 .businessBox {
   //   width: 54.254px;
@@ -565,6 +569,13 @@
   position: relative;
   right: 3px;
   bottom: 1px;
+}
+
+.icon {
+  width: auto;
+  text-align: center;
+  position: relative;
+  bottom: 121px;
 }
 
 .oneTitle {

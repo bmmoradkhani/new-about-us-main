@@ -3,14 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./PlanPage.module.scss";
 // Images :: ==>
-// import vectorCustomer from "../../public/assets/images/plan/Persifund landing page/Vector customer.png";
-// import vectorBusiness from "../../public/assets/images/plan/Business/Vector business.png";
-// import persifund1 from "../../public/assets/images/plan/Persifund landing page/Rectangle 473.png";
-// import persifund2 from "../../public/assets/images/plan/Persifund landing page/Rectangle 472.png";
-// import persifund3 from "../../public/assets/images/plan/Persifund landing page/Rectangle 471.png";
-// import persifund4 from "../../public/assets/images/plan/Persifund landing page/Rectangle 470.png";
-// import persifund5 from "../../public/assets/images/plan/Persifund landing page/Rectangle 469.png";
-// import persifundBusiness from "../../public/assets/images/plan/Business/Rectangle 474.png";
 
 import diagram from "../../public/assets/images/plan/new img/diagram.svg";
 
@@ -21,6 +13,13 @@ import leftCustomer from "../../public/assets/images/plan/left customer.svg";
 import businessIcon from "../../public/assets/images/plan/business icon.svg";
 import businessIcon2 from "../../public/assets/images/plan/business icon2.svg";
 import rightBusiness from "../../public/assets/images/plan/right Business.svg";
+
+import centerLine_Rightcurve from "../../public/assets/images/plan/new img/center line right curve.svg";
+import centerLine_Leftcurve from "../../public/assets/images/plan/new img/center line left curve.svg";
+import centerLinecurve_Icon_Box from "../../public/assets/images/plan/new img/center line curve icon box.svg";
+
+import centerLine_Curve2 from "../../public/assets/images/plan/new img/center line curve 2 .svg";
+import centerLine_Curve3 from "../../public/assets/images/plan/new img/center line  curve 3.svg";
 
 import manageReturns from "../../public/assets/images/plan/manage returns.png";
 import payment from "../../public/assets/images/plan/payment.png";
@@ -37,12 +36,10 @@ import vectorCenter2 from "../../public/assets/images/plan/Business/Vector cente
 import vectorCenter3 from "../../public/assets/images/plan/Business/Vector center 3.png";
 import Share from "../Share/Share";
 
-
 export interface Istate {
   startNum: Number;
   endNum: Number;
   duration: Number;
-  delay: Number;
   decimals?: Number;
   suffix: String;
   text: String;
@@ -54,7 +51,6 @@ export default function Plan() {
       startNum: 1,
       endNum: 50,
       duration: 4,
-      delay: 1,
       suffix: " hours",
       text: "saved on return handling a month",
     },
@@ -63,7 +59,6 @@ export default function Plan() {
       startNum: 1,
       endNum: 3.1,
       duration: 4,
-      delay: 1,
       suffix: " $",
       decimals: 1,
       text: "save logistics costs per RMA",
@@ -72,7 +67,6 @@ export default function Plan() {
       startNum: 1,
       endNum: 30,
       duration: 4,
-      delay: 1,
       suffix: "%",
       text: "Return rate reduction",
     },
@@ -96,22 +90,8 @@ export default function Plan() {
         </p>
       </div>
 
-      {/* {activeJourney === 2 && (
-        <>
-          <div className={` ${styles.shopifyAppStoreBox} `}>
-            <section className={` ${styles.shopifyAppStore} mx-auto `}>
-              <section className={` ${styles.shopifyAppStoreTitle} `}>
-                FIND US ON THE
-              </section>
-              <section className={` ${styles.shopifyAppStoreImg} `}>
-                <Image alt="shopifyAppStore" src={shopifyAppStore} />
-              </section>
-            </section>
-          </div>
-        </>
-      )} */}
       <div className={` ${styles.rankText} mx-auto p-0`}>
-        <div className="row p-0" style={{}}>
+        <div className="row p-0 m-0" style={{}}>
           <p className="col p-0 m-0">
             In 2022, the number of online purchases that were returned increased
             to 22.3% <br /> from 20.8% in 2021, which posed a significant threat
@@ -131,97 +111,11 @@ export default function Plan() {
             alt="diagram"
           />
         </div>
-
-        {/* <div className={` ${styles.vector} `}> */}
-        {/* {activeJourney === 1 && (
-            <>
-              <Image
-                className={` ${styles.vectorImg} `}
-                src={vectorCustomer}
-                alt="vector"
-              />
-            </>
-          )} */}
-
-        {/* {activeJourney === 2 && ( */}
-        {/* <> */}
-        {/* <Image
-            className={` ${styles.vectorBusinessImg} col-12`}
-            src={vectorBusiness}
-            alt="vector"
-          /> */}
-        {/* </> */}
-        {/* )} */}
-        {/* </div> */}
-
-        {/* <div className={` ${styles.barChartBusiness} text-end col-11`}>
-          {
-            <Image
-              src={persifund1}
-              className={` ${styles.persifund1} `}
-              alt="Persifund"
-            />
-          }
-
-          {
-            <Image
-              src={persifund2}
-              className={` ${styles.persifund2} `}
-              alt="Persifund"
-            />
-          }
-
-          {
-            <Image
-              src={persifund3}
-              className={` ${styles.persifund3} `}
-              alt="Persifund"
-            />
-          }
-
-          {
-            <Image
-              src={persifund4}
-              className={` ${styles.persifund4} `}
-              alt="Persifund"
-            />
-          }
-
-          {
-            <Image
-              src={persifundBusiness}
-              className={` ${styles.persifundBusiness} `}
-              alt="Persifund"
-            />
-          }
-        </div> */}
       </div>
-      {/* {activeJourney === 2 && (
-        <>
-          <div className={`${styles.percent} col-12`}>
-            <section className={`${styles.rowTitle}`}>
-              50% less
-              <span>return-related messages</span>
-            </section>
-            <span className={`${styles.percentLine}`}></span>
-            <section className={`${styles.rowTitle}`}>
-              37%
-              <span>return rate reduction</span>
-            </section>
-            <span className={`${styles.percentLine}`}></span>
-            <section className={`${styles.rowTitle}`}>
-              10 times
-              <span>faster at processing returns</span>
-            </section>
-            <span className={`${styles.percentLine}`}></span>
-            <section className={`${styles.rowTitle}`}>
-              30%
-              <span>of return value retained</span>
-            </section>
-          </div>
-        </>
-      )} */}
+
       <Share users={data} />
+
+      {/* --- main --- */}
 
       <div className={`${styles.explore}`}>Explore Your Journey</div>
 
@@ -305,15 +199,18 @@ export default function Plan() {
         </div>
       </div>
 
+      {/* customer main */}
+
       {activeJourney === 1 && (
         <>
           <div
-            className={` ${styles.CenterMain} ${styles.firstRow} col-12 d-md-flex `}
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
           >
-            <div className={`${styles} mx-auto `}>
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
               <h2 className={`${styles.oneTitleBusiness} my-5`}>
                 No need more <br /> than an emaiL...
               </h2>
+
               <p className={`${styles.oneCommentBusiness} d-flex`}>
                 Customers have the ability to initiate a return <br /> at any
                 time and in a convenient manner. All the <br /> thing that
@@ -323,34 +220,220 @@ export default function Plan() {
             </div>
 
             <div
-              className={`${styles.exchange} mx-auto text-center mt-5 mt-lg-0`}
+              className="p-0 d-none d-lg-inline"
+              style={{
+                width: "auto",
+                position: "relative",
+                bottom: "121px",
+                right: "50px",
+              }}
+            >
+              <div className="">
+                <Image src={centerLine_Leftcurve} alt="centerLinecurve"></Image>
+              </div>
+
+              <div
+                className=""
+                style={{
+                  position: "relative",
+                  left: "22px",
+                  bottom: "2px",
+                  display: "grid",
+                  justifyContent: "end",
+                }}
+              >
+                <div className="">
+                  <Image
+                    src={centerLinecurve_Icon_Box}
+                    className={`${styles.centerLinecurve_Icon_Box}`}
+                    alt="centerLinecurve_Icon_Box"
+                  ></Image>
+                </div>
+
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    position: "relative",
+                    bottom: "35px",
+                    right: "0.5px",
+                  }}
+                >
+                  <h3 className="m-0 ">1</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
             >
               <Image src={exchange} alt="exchange"></Image>
             </div>
           </div>
 
           <div
-            className={` ${styles.CenterMain} ${styles.brandName} ${styles.marginTop} col-12 d-flex `}
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`}
           >
-            <div
-              className={`${styles.brandNameImg} mx-auto d-flex mt-5 mt-lg-0`}
-            >
-              <Image src={brandName} alt="brand"></Image>
-            </div>
-            <div className={`${styles} mx-auto `}>
-              <h2 className={`${styles.twoTitleBusiness} my-5`}>
-                More convenient for <br /> customers than ever <br /> before
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
               </h2>
-              <p className={`${styles.twoCommentBusiness} d-flex `}>
-                Customers can select which items to <br /> return from a
-                comprehensive list of all <br /> their purchases, using various
-                features.
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
               </p>
             </div>
+
+            <div
+              className="p-0 d-none d-lg-inline"
+              style={{
+                width: "auto",
+                textAlign: "center",
+                position: "relative",
+                bottom: "121px",
+              }}
+            >
+              {/* 
+
+                      این مقادیر چن خط برای تگ بالاست
+                  width: auto;
+                  position: relative;
+                  bottom: 121px;
+                  left: 50px;
+                  margin: 55px 0 117px 0;
+                  position: unset;
+              ////////////////////////////
+
+                  <svg width="49" height="89" viewBox="0 0 49 89" fill="none">
+                   <circle cx="24.9966" cy="64.6044" r="24" fill="#35498B"></circle>
+                  <line x1="24.9966" y1="49.009" x2="24.9966" y2="0.142456" stroke="#2A438F" stroke-width="2"></line>
+                  </svg>
+                  <h2 style="display: flex;justify-content: center;margin: 0;position: relative;bottom: 37px;color: #FFF;text-align: center;font-family: Roboto;font-size: 25px;font-style: normal;font-weight: 600;line-height: 25px;">1</h1>
+
+
+              */}
+
+              <div className="">
+                <Image src={centerLine_Curve2} alt="centerLinecurve"></Image>
+              </div>
+
+              <div
+                className=""
+                style={{
+                  position: "relative",
+                  // left: "22px",
+                  bottom: "2px",
+                  display: "grid",
+                  justifyContent: "end",
+                }}
+              >
+                <div className="">
+                  <Image
+                    src={centerLinecurve_Icon_Box}
+                    className={`${styles.centerLinecurve_Icon_Box}`}
+                    alt="centerLinecurve_Icon_Box"
+                  ></Image>
+                </div>
+
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    position: "relative",
+                    bottom: "35px",
+                    right: "0.5px",
+                  }}
+                >
+                  <h3 className="m-0 ">1</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image src={exchange} alt="exchange"></Image>
+            </div>
           </div>
+
           <div
-            className={` ${styles.CenterMain} ${styles.marginBottom} ${styles.marginTop} col-12 d-md-flex `}
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
           >
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
+              </h2>
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
+              </p>
+            </div>
+
+            <div
+              className="p-0 d-none d-lg-inline"
+              style={{
+                width: "auto",
+                textAlign: "center",
+                position: "relative",
+                bottom: "121px",
+                // left: "50px",
+              }}
+            >
+              <div className="">
+                <Image src={centerLine_Curve3} alt="centerLinecurve"></Image>
+              </div>
+
+              <div
+                className=""
+                style={{
+                  position: "relative",
+                  // left: "22px",
+                  bottom: "2px",
+                  display: "grid",
+                  justifyContent: "end",
+                }}
+              >
+                <div className="">
+                  <Image
+                    src={centerLinecurve_Icon_Box}
+                    className={`${styles.centerLinecurve_Icon_Box}`}
+                    alt="centerLinecurve_Icon_Box"
+                  ></Image>
+                </div>
+
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    position: "relative",
+                    bottom: "35px",
+                    right: "0.5px",
+                  }}
+                >
+                  <h3 className="m-0 ">1</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image src={exchange} alt="exchange"></Image>
+            </div>
+          </div>
+
+          {/*  */}
+
+          {/* <div className={` ${styles.CenterMain} ${styles.marginBottom} ${styles.marginTop} col-12 d-md-flex `} >
             <div className={`${styles} mx-auto `}>
               <h2
                 className={`${styles.threeTitleBusiness} d-flex d-md-block mb-5`}
@@ -368,11 +451,228 @@ export default function Plan() {
                 <Image src={businessFactor} alt="businessFactor"></Image>
               </div>
             </div>
+          </div> */}
+          {/*  */}
+        </>
+      )}
+
+      {/* business */}
+
+      {activeJourney === 2 && (
+        <>
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
+          >
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
+              </h2>
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
+              </p>
+            </div>
+
+            <div
+              className="p-0 d-none d-lg-inline"
+              style={{
+                width: "auto",
+                position: "relative",
+                bottom: "121px",
+                left: "50px",
+              }}
+            >
+              <div className="">
+                <Image
+                  src={centerLine_Rightcurve}
+                  alt="centerLinecurve"
+                ></Image>
+              </div>
+
+              <div
+                className=""
+                style={{
+                  position: "relative",
+                  right: "22px",
+                  bottom: "2px",
+                  display: "grid",
+                  justifyContent: "start",
+                }}
+              >
+                <div className="">
+                  <Image
+                    src={centerLinecurve_Icon_Box}
+                    className={`${styles.centerLinecurve_Icon_Box}`}
+                    alt="centerLinecurve_Icon_Box"
+                  ></Image>
+                </div>
+
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    position: "relative",
+                    bottom: "35px",
+                    right: "0.5px",
+                  }}
+                >
+                  <h3 className="m-0 ">1</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image src={exchange} alt="exchange"></Image>
+            </div>
+          </div>
+
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`}
+          >
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
+              </h2>
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
+              </p>
+            </div>
+
+            <div
+              className="p-0 d-none d-lg-inline"
+              style={{
+                width: "auto",
+                position: "relative",
+                bottom: "121px",
+                left: "28px",
+              }}
+            >
+              <div className="">
+                <Image src={centerLine_Curve2} alt="centerLinecurve"></Image>
+              </div>
+
+              <div
+                className=""
+                style={{
+                  position: "relative",
+                  right: "22px",
+                  bottom: "2px",
+                  display: "grid",
+                  justifyContent: "end",
+                }}
+              >
+                <div className="">
+                  <Image
+                    src={centerLinecurve_Icon_Box}
+                    className={`${styles.centerLinecurve_Icon_Box}`}
+                    alt="centerLinecurve_Icon_Box"
+                  ></Image>
+                </div>
+
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    position: "relative",
+                    bottom: "35px",
+                    right: "0.5px",
+                  }}
+                >
+                  <h3 className="m-0 ">1</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image src={exchange} alt="exchange"></Image>
+            </div>
+          </div>
+
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
+          >
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
+              </h2>
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
+              </p>
+            </div>
+
+            <div
+              className="p-0 d-none d-lg-inline"
+              style={{
+                width: "auto",
+                position: "relative",
+                bottom: "121px",
+                left: "28px",
+              }}
+            >
+              <div className="">
+                <Image src={centerLine_Curve3} alt="centerLinecurve"></Image>
+              </div>
+
+              <div
+                className=""
+                style={{
+                  position: "relative",
+                  right: "22px",
+                  bottom: "2px",
+                  display: "grid",
+                  justifyContent: "end",
+                }}
+              >
+                <div className="">
+                  <Image
+                    src={centerLinecurve_Icon_Box}
+                    className={`${styles.centerLinecurve_Icon_Box}`}
+                    alt="centerLinecurve_Icon_Box"
+                  ></Image>
+                </div>
+
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    position: "relative",
+                    bottom: "35px",
+                    right: "0.5px",
+                  }}
+                >
+                  <h3 className="m-0 ">1</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image src={exchange} alt="exchange"></Image>
+            </div>
           </div>
         </>
       )}
 
-      {activeJourney === 2 && (
+      {/* {activeJourney === 2 && (
         <>
           <div
             className={` ${styles.CenterMain} ${styles.firstRow} ${styles.row} col-12 d-md-flex p-0`}
@@ -388,7 +688,6 @@ export default function Plan() {
               <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
                 Unlock Efficiency with Automation:
               </h2>
-              {/* <p className={`${styles.oneComment} d-flex`}></p> */}
 
               <ul className={`${styles.ulList}`}>
                 <li>
@@ -421,7 +720,6 @@ export default function Plan() {
               <h2 className={`${styles.twoTitle_new}`}>
                 Smooth Return Experience
               </h2>
-              {/* <p className={`${styles.twoComment} d-flex d-xl-block `}></p> */}
 
               <ul className={`${styles.ulList}`}>
                 <li>
@@ -470,7 +768,6 @@ export default function Plan() {
               <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
                 Unlock Efficiency with Automation:
               </h2>
-              {/* <p className={`${styles.oneComment} d-flex`}></p> */}
 
               <ul className={`${styles.ulList}`}>
                 <li>
@@ -503,7 +800,6 @@ export default function Plan() {
               <h2 className={`${styles.twoTitle_new}`}>
                 Smooth Return Experience
               </h2>
-              {/* <p className={`${styles.twoComment} d-flex d-xl-block `}></p> */}
 
               <ul className={`${styles.ulList}`}>
                 <li>
@@ -552,7 +848,6 @@ export default function Plan() {
               <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
                 Unlock Efficiency with Automation:
               </h2>
-              {/* <p className={`${styles.oneComment} d-flex`}></p> */}
 
               <ul className={`${styles.ulList}`}>
                 <li>
@@ -578,7 +873,7 @@ export default function Plan() {
             </div>
           </div>
         </>
-      )}
+      )} */}
     </div>
   );
 }

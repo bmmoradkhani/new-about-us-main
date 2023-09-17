@@ -1,15 +1,7 @@
-<svg width="90" height="128" viewBox="0 0 90 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group 639">
-<g id="Group 336">
-<g id="Ellipse 32">
-<path id="Vector" d="M9.81109 9.44885C11.7997 9.44885 13.4117 7.77538 13.4117 5.71106C13.4117 3.64673 11.7997 1.97327 9.81109 1.97327C7.82251 1.97327 6.21045 3.64673 6.21045 5.71106C6.21045 7.77538 7.82251 9.44885 9.81109 9.44885Z" stroke="white" stroke-width="2"/>
-</g>
-<path id="Path 654" d="M1.14648 22.2066C1.14648 10.3574 10.062 9.68323 10.062 9.68323C10.062 9.68323 18.4022 10.1695 18.4793 22.2066" stroke="white" stroke-width="2"/>
-</g>
-<path id="Vector 24" d="M9.64453 35.5021V97.0013C9.64453 113.57 23.076 127.001 39.6445 127.001H89.0103" stroke="url(#paint0_linear_610_1021)" stroke-width="1.5"/>
-</g>
+<svg width="81" height="93" viewBox="0 0 81 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.01758 0.501587V62.0008C1.01758 78.5694 14.449 92.0008 31.0176 92.0008H80.3833" stroke="url(#paint0_linear_610_1021)" stroke-width="1.5"/>
 <defs>
-<linearGradient id="paint0_linear_610_1021" x1="9.64453" y1="58.043" x2="86.9091" y2="57.6182" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_610_1021" x1="1.01758" y1="23.0425" x2="78.2822" y2="22.6177" gradientUnits="userSpaceOnUse">
 <stop stop-color="#2A438F"/>
 <stop offset="0.515625" stop-color="#B4BAD3"/>
 <stop offset="0.770833" stop-color="#E7E6EB"/>

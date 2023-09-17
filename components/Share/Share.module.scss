@@ -13,7 +13,7 @@
   }
 
   .counter_Text {
-    color: #fdf5e2;
+    color: $title-color;
     font-family: Inter;
     font-size: 42px;
     font-style: normal;
@@ -54,7 +54,7 @@
   }
 
   .counter_Text {
-    color: #fdf5e2;
+    color: $title-color;
     font-family: Inter;
     font-size: 58px;
     font-style: normal;
@@ -95,7 +95,7 @@
   }
 
   .counter_Text {
-    color: #fdf5e2;
+    color: $title-color;
     font-family: Inter;
     font-size: 58px;
     font-style: normal;
@@ -123,22 +123,10 @@
   }
 }
 
-// @media screen and (max-width: 575.98px) {
-//   .numberBox {
-//     display: block !important;
-//     height: 776.685px !important;
-//   }
-
-//   .numberBox_Title {
-//     font-size: 58px !important;
-//   }
-// }
-
 @media screen and (max-width: 991.98px) {
   .numberBox {
     display: block !important;
     height: auto !important;
-    // height: 776.685px !important;
   }
 
   .numberBox_Title {
@@ -149,7 +137,7 @@
 @media screen and (min-width: 992px) {
   .brNone {
     font-size: 20px !important;
-    border-right: 1px solid #fcf7f4 !important;
+    border-right: 1px solid $secondary-background-color !important;
   }
 
   .numberBox_Title:last-child {
@@ -159,7 +147,7 @@
   .counter_Text_Content {
     padding-top: 12.25px !important;
 
-    color: #fcf7f4;
+    color: $secondary-background-color;
     text-align: center;
     font-family: Inter;
     font-size: 16px;
@@ -170,7 +158,7 @@
   }
 
   .counter_Text {
-    color: #fcf7f4;
+    color: $secondary-background-color;
     font-family: Inter;
     font-size: 49px;
     font-style: normal;
@@ -178,21 +166,6 @@
     line-height: normal;
   }
 }
-
-// @media screen and (min-width: 576px) and (max-width: 767.98px) {
-//   .numberBox_Title {
-//     font-size: 22px !important;
-//     padding: unset !important;
-//   }
-
-//   .counter_Text {
-//     font-size: 25px !important;
-//   }
-
-//   .counter_Text_Content {
-//     font-size: 12px !important;
-//   }
-// }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
   .numberBox_Title {
@@ -225,14 +198,14 @@
 
 .numberBox {
   margin-top: 39px;
-  width: 100%; /* 1440.782px */
+  width: 100%;
   height: 174.715px;
-  background: #35498b;
+  background: $primary-color;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .numberBox_Title {
-  color: #fdf5e2;
+  color: $secondary-background-color;
   font-family: Inter;
   font-size: 50px;
   font-style: normal;
