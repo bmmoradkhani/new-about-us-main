@@ -5,6 +5,7 @@ import styles from "./PlanPage.module.scss";
 // Images :: ==>
 
 import diagram from "../../public/assets/images/plan/new img/diagram.svg";
+import diagram_Mobile from "../../public/assets/images/plan/new img/Diagram Mobile.svg";
 
 import customerIcon from "../../public/assets/images/plan/customer icon.svg";
 import customerIcon2 from "../../public/assets/images/plan/customer icon2.svg";
@@ -76,7 +77,7 @@ export default function Plan() {
 
   return (
     <div className={`${styles.paddingTop} mx-0 row`}>
-      <div className={`${styles} col-10 col-lg-11 col-xl-12 mx-auto`}>
+      <div className={`${styles} col-12 my_container m-0 p-0`}>
         <h1
           className={`${styles.titleH1} col-lg-12 col-xl-9 col-xxl-7 text-center`}
         >
@@ -90,8 +91,11 @@ export default function Plan() {
         </p>
       </div>
 
-      <div className={` ${styles.rankText} mx-auto p-0`}>
-        <div className="row p-0 m-0" style={{}}>
+      {/* desktop */}
+      <div
+        className={` ${styles.rankText_Desktop} d-none d-lg-inline mx-auto p-0`}
+      >
+        <div className="row p-0 my-0 mx-5" style={{}}>
           <p className="col p-0 m-0">
             In 2022, the number of online purchases that were returned increased
             to 22.3% <br /> from 20.8% in 2021, which posed a significant threat
@@ -109,6 +113,42 @@ export default function Plan() {
             className={` ${styles.vectorImg} col p-0`}
             src={diagram}
             alt="diagram"
+          />
+        </div>
+      </div>
+
+      {/* Mobile */}
+
+      <div
+        className={` ${styles.rankText_Mobile} row d-lg-none p-0 m-0`}
+        style={{
+          textAlign: "center",
+          justifyContent: "center",
+          height: "auto",
+        }}
+      >
+        <div
+          className="col-12 col-sm-10 col-md-9 p-0 m-0"
+          style={{ textAlign: "center" }}
+        >
+          <p className="my_container" style={{}}>
+            In 2022, the number of online purchases that were returned increased
+            to 22.3% from 20.8% in 2021, which posed a significant threat to
+            retailers' revenue as it resulted in a 18% decrease. This is
+            particularly concerning for retailers as online sales are growing at
+            a faster pace than anticipated.
+          </p>
+        </div>
+
+        <div
+          className="col-12 col-sm-10 col-md-9 p-0 "
+          style={{ padding: "0 25px !important", marginTop: "15px" }}
+        >
+          <Image
+            className={` ${styles.diagram_Mobile} col p-0`}
+            src={diagram_Mobile}
+            alt="diagram"
+            style={{ width: "-webkit-fill-available", height: "auto" }}
           />
         </div>
       </div>

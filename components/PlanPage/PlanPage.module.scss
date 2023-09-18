@@ -1,13 +1,63 @@
 @import "../../styles/variables.module";
 
+@media screen and (max-width: 259.98px) {
+  .titleH1 {
+    font-size: 8.75vw !important;
+  }
+
+  .SubTitleText {
+    font-size: 6vw !important;
+  }
+
+  .rankText_Mobile {
+    text-align: center !important;
+    justify-content: center !important;
+    height: auto !important;
+  }
+
+  .rankText_Mobile div {
+    text-align: center !important;
+  }
+
+  .rankText_Mobile div p {
+    padding: 0 25px !important;
+    font-size: 5vw !important;
+  }
+}
+
+@media screen and (min-width: 260px) and (max-width: 575.98px) {
+  .titleH1 {
+    font-size: 8vw !important;
+  }
+
+  // .SubTitleText {
+  //   font-size: 6vw !important;
+  // }
+
+  // .rankText_Mobile {
+  //   text-align: center !important;
+  //   justify-content: center !important;
+  //   height: auto !important;
+  // }
+
+  // .rankText_Mobile div {
+  //   text-align: center !important;
+  // }
+
+  // .rankText_Mobile div p {
+  //   padding: 0 25px !important;
+  //   font-size: 5vw !important;
+  // }
+}
+
 @media screen and (max-width: 575.98px) {
   .marginTop {
     margin-top: 85px;
   }
 
-  .titleH1 {
-    font-size: 45px !important;
-  }
+  // .titleH1 {
+  //   font-size: 45px !important;
+  // }
 
   .vector {
     bottom: 35% !important;
@@ -115,9 +165,9 @@
     bottom: 60% !important;
   }
 
-  .vectorImg {
-    height: 100px !important;
-  }
+  // .vectorImg {
+  //   height: 100px !important;
+  // }
 
   .barChart {
     position: relative !important;
@@ -152,7 +202,7 @@
     bottom: 70%;
   }
 
-  .rankText p {
+  .rankText_Desktop p {
     margin: 0 5% !important;
   }
 
@@ -314,9 +364,18 @@
   line-height: normal;
 }
 
-.rankText {
+.rankText_Desktop {
   width: 1048px;
   height: 182px;
+}
+
+.rankText_Mobile div p {
+  color: #000d3d;
+  text-align: center;
+  font-family: Poppins-Light;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .persifund1 {
@@ -538,12 +597,12 @@
 //   content: "1";
 // }
 
-.businessBox {
-  //   width: 54.254px;
-  //   height: 54.254px;
-  //   border-radius: 50%;
-  //   background: linear-gradient(180deg, #004fc5 0%, #ff76f1 170%);
-}
+// .businessBox {
+//   width: 54.254px;
+//   height: 54.254px;
+//   border-radius: 50%;
+//   background: linear-gradient(180deg, #004fc5 0%, #ff76f1 170%);
+// }
 
 // .businessBoxStyle {
 //   width: 54.254px;
