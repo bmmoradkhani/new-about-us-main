@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AboutUsPage.module.scss";
 import Image from "next/image";
 
-import point from "../../public/assets/images/about-us/Group 670.png";
+import point from "../../public/assets/images/about-us/Group 670.svg";
 
 import energyIcon from "../../public/assets/images/about-us/new img/Efficiency.svg";
 import integration from "../../public/assets/images/about-us/new img/integration.svg";
