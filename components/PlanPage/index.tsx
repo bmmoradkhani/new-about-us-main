@@ -51,7 +51,7 @@ export interface Istate {
   text: String;
 }
 
-export default function Plan() {
+export default function index() {
   const data: Istate[] = [
     {
       startNum: 1,
