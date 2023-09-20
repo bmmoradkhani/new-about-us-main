@@ -10,7 +10,7 @@ import diagram_Mobile from "../../public/assets/images/plan/new img/Diagram Mobi
 import customerIcon_1 from "../../public/assets/images/plan/customer icon white.svg";
 import customerIcon_1_Mobile from "../../public/assets/images/plan/customer icon white Mobile.svg";
 import customerIcon_2 from "../../public/assets/images/plan/customer icon blue.svg";
-import customerIcon_2_Mobile from "../../public/assets/images/plan/customer icon Blue Mobile.svg";
+// import customerIcon_2_Mobile from "../../public/assets/images/plan/customer icon blue Mobile.svg"
 import leftCustomer from "../../public/assets/images/plan/left customer.svg";
 
 import businessIcon_Blue from "../../public/assets/images/plan/business icon blue.svg";
@@ -216,11 +216,11 @@ export default function Plan() {
                     alt="customerIcon"
                     className=" d-none d-sm-inline"
                   />
-                  <Image
+                  {/* <Image
                     src={customerIcon_2_Mobile}
                     alt="customerIcon"
                     className="d-sm-none"
-                  />
+                  /> */}
                 </section>
 
                 <h2 className={`${styles.customer_2} m-0`}> CUSTOMER </h2>
