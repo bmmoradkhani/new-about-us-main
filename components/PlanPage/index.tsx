@@ -166,48 +166,6 @@ export default function Plan() {
 
       <div className={`${styles} row text-center m-0 p-0`}>
         {/*  customer */}
-        {/* <div className={` ${styles} col-9 col-sm-6 p-0 `}>
-
-          <section
-            onClick={() => setActiveJourney(1)}
-            className={`${activeJourney === 1 && styles.customerBox_1}
-           ${ activeJourney === 2 && styles.customerBox_2 } mx-auto  `} >
-
-            <section className={`${styles.customerIcon} d-none d-sm-inline`}>
-              <Image
-                src={
-                  (activeJourney === 1 && customerIcon_1) ||
-                  (activeJourney === 2 && customerIcon_2)
-                }
-                alt="customerIcon" />
-            </section>
-
-            <section className={`${styles.customerIcon} d-sm-none`}>
-              <Image
-                src={
-                  (activeJourney === 1 && customerIcon_1_Mobile) ||
-                  (activeJourney === 2 && customerIcon_2_Mobile)
-                }
-                alt="customerIcon" />
-            </section>
-
-            <h2 className={`${activeJourney === 1 && styles.customer_1} 
-              ${activeJourney === 2 && styles.customer_2} m-0`} > CUSTOMER
-            </h2>
-
-          </section>
-
-          {activeJourney === 1 && (
-            <>
-              <section className={` ${styles.leftCustomer} d-none d-sm-inline`}>
-                <Image src={leftCustomer} alt="customer" />
-              </section>
-            </>
-          )}
-
-        </div> */}
-
-        {/* Testing */}
 
         {activeJourney === 1 && (
           <>
