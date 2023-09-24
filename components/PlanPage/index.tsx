@@ -10,7 +10,7 @@ import diagram_Mobile from "../../public/assets/images/plan/new img/Diagram Mobi
 import customerIcon_1 from "../../public/assets/images/plan/customer icon white.svg";
 import customerIcon_1_Mobile from "../../public/assets/images/plan/customer icon white Mobile.svg";
 import customerIcon_2 from "../../public/assets/images/plan/customer icon blue.svg";
-import customerIcon_2_Mobile from "../../public/assets/images/plan/customer icon blue Mobile.svg"
+import customerIcon_2_Mobile from "../../public/assets/images/plan/customer icon blue Mobile.svg";
 import leftCustomer from "../../public/assets/images/plan/left customer.svg";
 
 import businessIcon_Blue from "../../public/assets/images/plan/business icon blue.svg";
@@ -40,9 +40,9 @@ import arrowButton from "../../public/assets/images/plan/arrow button.svg";
 import vectorCenter1 from "../../public/assets/images/plan/Business/Vector center 1.png";
 import vectorCenter2 from "../../public/assets/images/plan/Business/Vector center 2.png";
 import vectorCenter3 from "../../public/assets/images/plan/Business/Vector center 3.png";
-import Share from "../Share/Share";
+import Counter from "../Counter";
 
-export interface Istate {
+export interface Icounter {
   startNum: Number;
   endNum: Number;
   duration: Number;
@@ -52,7 +52,7 @@ export interface Istate {
 }
 
 export default function Plan() {
-  const data: Istate[] = [
+  const data: Icounter[] = [
     {
       startNum: 1,
       endNum: 50,
@@ -158,7 +158,7 @@ export default function Plan() {
         </div>
       </div>
 
-      {/* <Share users={data} /> */}
+      <Counter users={data} />
 
       {/* --- main --- */}
 
@@ -326,120 +326,9 @@ export default function Plan() {
 
       {/* customer main */}
 
-    {activeJourney === 1 && (
-      <>
-      {/* 1 */}
-        <div className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `} >
-
-            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
-
-              <h2 className={`${styles.oneTitleBusiness} my-5`}>
-                No need more <br /> than an emaiL...
-              </h2>
-
-              <p className={`${styles.oneCommentBusiness} d-flex`}>
-                Customers have the ability to initiate a return <br /> at any
-                time and in a convenient manner. All the <br /> thing that
-                customers need to do their return is <br /> an email that they
-                use when they shop.
-              </p>
-
-            </div>
-
-            <div className= {`${styles.TopCenter_LeftCurve} p-0 d-none d-lg-inline`} >
-
-              <div className="">
-                <Image src={centerLine_Leftcurve} alt="centerLinecurve"></Image>
-              </div>
-
-              <div className={`${styles.TopCenter_LeftCurve_IconBox}`} >
-               
-               <div className={`${styles.center_Icon_Box}`} >
-                 <h3 className="m-0">1</h3> 
-               </div>
-
-              </div>
-
-          </div>
-
-            <div className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`} >
-              <Image src={exchange} alt="exchange" style={{ width: "244.517px", height: "324.124px" }} ></Image>
-            </div>
-          </div>
-
-{/* 2 */}
-         <div className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`} >
-          
-            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
-              <h2 className={`${styles.oneTitleBusiness} my-5`}>
-                No need more <br /> than an emaiL...
-              </h2>
-
-              <p className={`${styles.oneCommentBusiness} d-flex`}>
-                Customers have the ability to initiate a return <br /> at any
-                time and in a convenient manner. All the <br /> thing that
-                customers need to do their return is <br /> an email that they
-                use when they shop.
-              </p>
-            </div>
-
-          <div className= {`${styles.center_Box} p-0 d-none d-lg-inline`} >
-          
-              <div className="">
-                <Image src={centerLine_Curve2} alt="centerLinecurve"></Image>
-              </div>
-
-            <div className={`${styles.center_Icon_Box}`} >
-              <h3 className="m-0 ">2</h3> </div>
-            </div>
-
-            <div className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`} >
-              <Image src={exchange} alt="exchange"></Image>
-            </div>
-
-          </div>
-
-{/* 3 */}
-          <div className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `} >
-            
-            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
-              <h2 className={`${styles.oneTitleBusiness} my-5`}>
-                No need more <br /> than an emaiL...
-              </h2>
-
-              <p className={`${styles.oneCommentBusiness} d-flex`}>
-                Customers have the ability to initiate a return <br /> at any
-                time and in a convenient manner. All the <br /> thing that
-                customers need to do their return is <br /> an email that they
-                use when they shop.
-              </p>
-            </div>
-
-            <div className={`${styles.center_Box} p-0 d-none d-lg-inline`} >
-              
-              <div className="">
-                <Image src={centerLine_Curve3} alt="centerLinecurve"></Image>
-              </div>
-
-              <div className={`${styles.center_Icon_Box}`} >
-                <h3 className="m-0 ">3</h3> 
-              </div>
-
-            </div>
-
-            <div className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`} >
-              <Image src={exchange} alt="exchange"></Image>
-            </div>
-
-        </div>
-      </>
-      )}
-
-      {/* business */}
-
-      {activeJourney === 2 && (
+      {activeJourney === 1 && (
         <>
-        {/* 1 */}
+          {/* 1 */}
           <div
             className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
           >
@@ -456,26 +345,57 @@ export default function Plan() {
               </p>
             </div>
 
-            <div className="p-0 d-none d-lg-inline" 
-              style={{
-                width: "auto",
-                position: "relative",
-                bottom: "121px",
-                left: "48px",
-              }} >
-
+            <div
+              className={`${styles.TopCenter_LeftCurve} p-0 d-none d-lg-inline`}
+            >
               <div className="">
-                <Image src={centerLine_Rightcurve} alt="centerLinecurve">
-                </Image>
+                <Image src={centerLine_Leftcurve} alt="centerLinecurve"></Image>
               </div>
-              
-                <div className={`${styles.center_Icon_Box}`} 
-                style={{right:"22px"}}
-                // style={{ display: "flex", justifyContent: "center", position: "relative", bottom: "35px", right: "0.5px", }} 
-                >
-                  <h3 className="m-0 ">1</h3>
+
+              <div className={`${styles.TopCenter_LeftCurve_IconBox}`}>
+                <div className={`${styles.center_Icon_Box}`}>
+                  <h3 className="m-0">1</h3>
                 </div>
               </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image
+                src={exchange}
+                alt="exchange"
+                style={{ width: "244.517px", height: "324.124px" }}
+              ></Image>
+            </div>
+          </div>
+
+          {/* 2 */}
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`}
+          >
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
+              </h2>
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
+              </p>
+            </div>
+
+            <div className={`${styles.center_Box} p-0 d-none d-lg-inline`}>
+              <div className="">
+                <Image src={centerLine_Curve2} alt="centerLinecurve"></Image>
+              </div>
+
+              <div className={`${styles.center_Icon_Box}`}>
+                <h3 className="m-0 ">2</h3>{" "}
+              </div>
+            </div>
 
             <div
               className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
@@ -484,8 +404,10 @@ export default function Plan() {
             </div>
           </div>
 
-{/* 2 */}
-          <div className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`} >
+          {/* 3 */}
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
+          >
             <div className={`${styles} col-md-12 col-lg-5 p-0`}>
               <h2 className={`${styles.oneTitleBusiness} my-5`}>
                 No need more <br /> than an emaiL...
@@ -499,26 +421,121 @@ export default function Plan() {
               </p>
             </div>
 
-            <div className={`${styles.center_Box_business} p-0 d-none d-lg-inline`} 
-            // style={{ width: "auto", position: "relative", bottom: "121px", left: "3px", }} 
+            <div className={`${styles.center_Box} p-0 d-none d-lg-inline`}>
+              <div className="">
+                <Image src={centerLine_Curve3} alt="centerLinecurve"></Image>
+              </div>
+
+              <div className={`${styles.center_Icon_Box}`}>
+                <h3 className="m-0 ">3</h3>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image src={exchange} alt="exchange"></Image>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* business */}
+
+      {activeJourney === 2 && (
+        <>
+          {/* 1 */}
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
+          >
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
+              </h2>
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
+              </p>
+            </div>
+
+            <div
+              className="p-0 d-none d-lg-inline"
+              style={{
+                width: "auto",
+                position: "relative",
+                bottom: "121px",
+                left: "48px",
+              }}
+            >
+              <div className="">
+                <Image
+                  src={centerLine_Rightcurve}
+                  alt="centerLinecurve"
+                ></Image>
+              </div>
+
+              <div
+                className={`${styles.center_Icon_Box}`}
+                style={{ right: "22px" }}
+                // style={{ display: "flex", justifyContent: "center", position: "relative", bottom: "35px", right: "0.5px", }}
+              >
+                <h3 className="m-0 ">1</h3>
+              </div>
+            </div>
+
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
+              <Image src={exchange} alt="exchange"></Image>
+            </div>
+          </div>
+
+          {/* 2 */}
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`}
+          >
+            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+              <h2 className={`${styles.oneTitleBusiness} my-5`}>
+                No need more <br /> than an emaiL...
+              </h2>
+
+              <p className={`${styles.oneCommentBusiness} d-flex`}>
+                Customers have the ability to initiate a return <br /> at any
+                time and in a convenient manner. All the <br /> thing that
+                customers need to do their return is <br /> an email that they
+                use when they shop.
+              </p>
+            </div>
+
+            <div
+              className={`${styles.center_Box_business} p-0 d-none d-lg-inline`}
+              // style={{ width: "auto", position: "relative", bottom: "121px", left: "3px", }}
             >
               <div className="">
                 <Image src={centerLine_Curve2} alt="centerLinecurve"></Image>
               </div>
 
-                <div className={`${styles.center_Icon_Box_business}`} 
-                // style={{ display: "flex", justifyContent: "center", position: "relative", bottom: "35px", right: "0.5px", }} 
-                >
-                  <h3 className="m-0 ">2</h3>
-                </div>
+              <div
+                className={`${styles.center_Icon_Box_business}`}
+                // style={{ display: "flex", justifyContent: "center", position: "relative", bottom: "35px", right: "0.5px", }}
+              >
+                <h3 className="m-0 ">2</h3>
+              </div>
             </div>
 
-            <div className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`} >
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
               <Image src={exchange} alt="exchange"></Image>
             </div>
           </div>
-                {/* 3 */}
-          <div className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `} >
+          {/* 3 */}
+          <div
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
+          >
             <div className={`${styles} col-md-12 col-lg-5 p-0`}>
               <h2 className={`${styles.oneTitleBusiness} my-5`}>
                 No need more <br /> than an emaiL...
@@ -532,19 +549,21 @@ export default function Plan() {
               </p>
             </div>
 
-            <div className={`${styles.center_Box_business} p-0 d-none d-lg-inline`} >
-              
+            <div
+              className={`${styles.center_Box_business} p-0 d-none d-lg-inline`}
+            >
               <div className="">
                 <Image src={centerLine_Curve3} alt="centerLinecurve"></Image>
               </div>
 
-              <div className={`${styles.center_Icon_Box_business}`} >
+              <div className={`${styles.center_Icon_Box_business}`}>
                 <h3 className="m-0 ">3</h3>
               </div>
-
             </div>
 
-            <div className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`} >
+            <div
+              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
+            >
               <Image src={exchange} alt="exchange"></Image>
             </div>
           </div>

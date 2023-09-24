@@ -5,7 +5,7 @@ import styles from "../AboutUsPage.module.scss";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { Istate as Iprops } from "../index";
+import { IcenterMain as Iprops } from "../index";
 
 export interface MainContentProps {
   content: Iprops[];

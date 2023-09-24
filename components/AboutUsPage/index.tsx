@@ -17,58 +17,60 @@ import wave2 from "../../public/assets/images/about-us/wave2.png";
 import mobileFooterOrange from "../../public/assets/images/about-us/new img/Mobile footer-Orange.svg";
 import screenFooterOrange from "../../public/assets/images/about-us/new img/Screen footer-Orange.svg";
 
-import Share from "../Share/Share";
+import Counter from "../Counter";
 import CenterMain from "./CenterMain/CenterMain";
 
-export interface Istate {
-  // startNum: Number;
-  // endNum: Number;
-  // duration: Number;
-  // decimals?: Number;
-  // suffix: String;
-  // text: String;
+export interface Icounter {
+  startNum: Number;
+  endNum: Number;
+  duration: Number;
+  decimals?: Number;
+  suffix: String;
+  text: String;
+}
 
-  title?: string;
-  description?: string;
+export interface IcenterMain {
+  title: string;
+  description: string;
   image: StaticImageData;
 }
 
 export default function index() {
-  // const data: Istate[] = [
-  //   {
-  //     startNum: 1,
-  //     endNum: 50,
-  //     duration: 4,
-  //     suffix: " hours",
-  //     text: "saved on return handling a month",
-  //   },
+  const data: Icounter[] = [
+    {
+      startNum: 1,
+      endNum: 50,
+      duration: 4,
+      suffix: " hours",
+      text: "saved on return handling a month",
+    },
 
-  //   {
-  //     startNum: 1,
-  //     endNum: 70,
-  //     duration: 4,
-  //     suffix: "%",
-  //     text: "reduce complained messages",
-  //   },
+    {
+      startNum: 1,
+      endNum: 70,
+      duration: 4,
+      suffix: "%",
+      text: "reduce complained messages",
+    },
 
-  //   {
-  //     startNum: 1,
-  //     endNum: 3.1,
-  //     duration: 4,
-  //     suffix: " $",
-  //     decimals: 1,
-  //     text: "save logistics costs per RMA",
-  //   },
-  //   {
-  //     startNum: 1,
-  //     endNum: 30,
-  //     duration: 4,
-  //     suffix: "%",
-  //     text: "Return rate reduction",
-  //   },
-  // ];
+    {
+      startNum: 1,
+      endNum: 3.1,
+      duration: 4,
+      suffix: " $",
+      decimals: 1,
+      text: "save logistics costs per RMA",
+    },
+    {
+      startNum: 1,
+      endNum: 30,
+      duration: 4,
+      suffix: "%",
+      text: "Return rate reduction",
+    },
+  ];
 
-  const content: Istate[] = [
+  const content: IcenterMain[] = [
     {
       image: energyIcon,
       title: "Efficiency",
@@ -123,7 +125,7 @@ export default function index() {
         <p>We're backed by incredible Numbers</p>
       </div>
 
-      {/* <Share users={data} /> */}
+      <Counter users={data} />
 
       <div className={` ${styles.row_Title} row my_container`}>
         <div
