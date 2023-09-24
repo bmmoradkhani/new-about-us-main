@@ -17,7 +17,7 @@ const CenterMain: FC<MainContentProps> = (data: MainContentProps) => {
         <Row className={`${styles.efficiency} ${styles.center_Box}  my_container`}  >
          {Object.values(data.content).map((item: Iprops, index) => (
 
-          <section className={`${styles.flexDirection} p-0 d-lg-flex justify-content-between mx-0 row`}>
+          <section key={index} className={`${styles.flexDirection} p-0 d-lg-flex justify-content-between mx-0 row`}>
           
             <div className={`${styles.efficiency_Title} col-lg-5 p-0`}>
               <h2 key={index}>{item.title}</h2>
