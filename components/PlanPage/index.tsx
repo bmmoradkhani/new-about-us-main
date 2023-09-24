@@ -158,7 +158,7 @@ export default function Plan() {
         </div>
       </div>
 
-      <Share users={data} />
+      {/* <Share users={data} /> */}
 
       {/* --- main --- */}
 

@@ -53,7 +53,7 @@ const Share: FC<UsersListProps> = (data: UsersListProps) => {
               >
                 <CounterNew data={item} />
                 <section className={`${styles.counter_Text_Content}`}>
-                  {item.text}
+                  {/* {item.text} */}
                 </section>
               </Col>
             ))}
