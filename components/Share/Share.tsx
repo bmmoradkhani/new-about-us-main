@@ -38,8 +38,7 @@ const Share: FC<UsersListProps> = (data: UsersListProps) => {
   const [counterOn, setCounterOn] = useState(false);
   console.log(data.users);
   return (
-    <section
-      className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
+    <section className={`${styles.numberBox} d-flex justify-content-center align-items-center`}
     >
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}

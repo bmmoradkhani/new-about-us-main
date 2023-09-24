@@ -265,17 +265,17 @@
     font-size: unset;
   }
 
-  .dedicated_Title h2 {
-    font-size: 28.3px !important;
-  }
+  // .dedicated_Title h2 {
+  //   font-size: 28.3px !important;
+  // }
 
-  .environmental_Title h2 {
-    font-size: 33px !important;
-  }
+  // .environmental_Title h2 {
+  //   font-size: 33px !important;
+  // }
 
-  .seamless_Title h2 {
-    font-size: 25.2px !important;
-  }
+  // .seamless_Title h2 {
+  //   font-size: 25.2px !important;
+  // }
 
   .delight h2 {
     font-size: 35px !important;
@@ -315,6 +315,10 @@
 }
 
 @media screen and (max-width: 991.98px) {
+  .flexDirection .efficiency_Title {
+    text-align: center !important;
+  }
+
   .efficiency_Title,
   .costSavings_Title,
   .environmental_Title,
@@ -531,9 +535,12 @@
   margin-top: -85px;
 }
 
-.efficiency_Title {
+// .efficiency_Title {
+//   text-align: end;
+// }
+
+.efficiency_Title h2 {
   color: $primary-color;
-  text-align: end;
   font-family: $title-font;
   font-size: 45px;
   font-style: normal;
@@ -650,9 +657,14 @@
   margin-top: 15% !important;
 }
 
-.costSavings_Title {
-  color: $primary-color;
+.costSavings_Title,
+.dedicated_Title {
   text-align: end;
+}
+
+.costSavings_Title h2,
+.dedicated_Title h2 {
+  color: $primary-color;
   font-family: $title-font;
   font-size: 45px;
   font-style: normal;
@@ -671,15 +683,34 @@
   width: 470px;
 }
 
-.dedicated_Title h2 {
-  color: $primary-color;
-  text-align: end;
-  font-family: $title-font;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 70px;
+.flexDirection {
+  margin-top: 15%;
 }
+
+.flexDirection:first-child {
+  margin-top: 0;
+}
+
+.flexDirection:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.flexDirection:nth-child(even) .efficiency_Title {
+  text-align: left;
+}
+
+.flexDirection:nth-child(odd) .efficiency_Title {
+  text-align: right;
+}
+
+.flexDirection:nth-child(even) .efficiency_context {
+  display: flex;
+  justify-content: end;
+}
+
+// .flexDirection:nth-child(odd) {
+//   flex-direction: row;
+// }
 
 .dedicated_context p {
   color: rgba(42, 67, 143, 0.85);
