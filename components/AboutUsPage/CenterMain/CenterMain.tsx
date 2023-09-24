@@ -14,11 +14,14 @@ export interface MainContentProps {
 const CenterMain: FC<MainContentProps> = (data: MainContentProps) => {
   return (
     <>
-        <Row className={`${styles.efficiency} ${styles.center_Box}  my_container`}  >
-         {Object.values(data.content).map((item: Iprops, index) => (
-
-          <section key={index} className={`${styles.flexDirection} p-0 d-lg-flex justify-content-between mx-0 row`}>
-          
+      <Row
+        className={`${styles.efficiency} ${styles.center_Box}  my_container`}
+      >
+        {Object.values(data.content).map((item: Iprops, index) => (
+          <section
+            key={index}
+            className={`${styles.flexDirection} p-0 d-lg-flex justify-content-between mx-0 row`}
+          >
             <div className={`${styles.efficiency_Title} col-lg-5 p-0`}>
               <h2 key={index}>{item.title}</h2>
             </div>
@@ -33,9 +36,8 @@ const CenterMain: FC<MainContentProps> = (data: MainContentProps) => {
             <div className={`${styles.efficiency_context} p-0 col-12 col-lg-5`}>
               <p key={index}>{item.description}</p>
             </div>
-
           </section>
-      ))}
+        ))}
       </Row>
     </>
   );
