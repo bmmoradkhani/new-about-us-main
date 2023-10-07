@@ -108,7 +108,6 @@ export default function index() {
       <div className={` ${styles.ourMission}`}>
         <h1 className={` ${styles.ourMission_Text}`}>Our Mission</h1>
       </div>
-
       <div className={`${styles.storeTitle} d-flex justify-content-center `}>
         <div className={`${styles.storeTitle_Text}`}>
           <p className="m-0">
@@ -116,17 +115,13 @@ export default function index() {
           </p>
         </div>
       </div>
-
       <div className={`${styles}`}>
         <Image src={point} className={`${styles.point}`} alt="point" />
       </div>
-
       <div className={`${styles.numberTitle}`}>
         <p>We're backed by incredible Numbers</p>
       </div>
-
       <Counter users={data} />
-
       <div className={` ${styles.row_Title} row my_container`}>
         <div
           className={`${styles.about_Persifund} col-12 col-lg-6 col-xxl-5 my-3 my-md-0 p-0`}
@@ -198,7 +193,6 @@ export default function index() {
           </p>
         </div>
       </div>
-
       <div className={`${styles.centerTitle}`}>
         <h1>Why we are here</h1>
       </div>
@@ -334,13 +328,11 @@ export default function index() {
           </div>
         </div>
       </div>{" "} */}
-
+      
       <CenterMain content={content} />
-
       <div className={`${styles.pointBt}`}>
         <Image src={point} className={`${styles}`} alt="point" />
       </div>
-
       <div
         className={`${styles.centerTitle_Together} d-flex justify-content-center`}
       >
@@ -349,7 +341,6 @@ export default function index() {
           make returns a hassle-free process for you and your valued customers.
         </h1>
       </div>
-
       <div
         className={`${styles.aks} row mx-0 `}
         style={{ position: "relative", height: "600px" }}

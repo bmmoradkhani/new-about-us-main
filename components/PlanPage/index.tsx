@@ -36,11 +36,14 @@ import businessFactor from "../../public/assets/images/plan/Business/Business fa
 import shopifyAppStore from "../../public/assets/images/plan/Business/shopifyAppStore.png";
 
 import arrowButton from "../../public/assets/images/plan/arrow button.svg";
+import arrowBoxMobile from "../../public/assets/images/plan/arrowboxMobile.svg";
 
 import vectorCenter1 from "../../public/assets/images/plan/Business/Vector center 1.png";
 import vectorCenter2 from "../../public/assets/images/plan/Business/Vector center 2.png";
 import vectorCenter3 from "../../public/assets/images/plan/Business/Vector center 3.png";
 import Counter from "../Counter";
+
+import CenterMain from "../AboutUsPage/CenterMain/CenterMain";
 
 export interface Icounter {
   startNum: Number;
@@ -49,6 +52,12 @@ export interface Icounter {
   decimals?: Number;
   suffix: String;
   text: String;
+}
+
+export interface IcenterMain {
+  title: string;
+  description: string;
+  // image: StaticImageData;
 }
 
 export default function Plan() {
@@ -78,6 +87,39 @@ export default function Plan() {
     },
   ];
 
+  const content: IcenterMain[] = [
+    {
+      // image: energyIcon,
+      title: "Efficiency",
+      description:
+        "Our return management system is designed to optimize your operations. By automating tasks and eliminating manual processes, we help you handle returns quickly and efficiently, saving you valuable time and resources.",
+    },
+    {
+      // image: integration,
+      title: "Seamless Integration",
+      description:
+        "Our seamless integration enables you to effortlessly integrate our return management system into your existing workflow, ensuring a smooth and cohesive experience for both you and your customers.",
+    },
+    {
+      // image: save_Money,
+      title: "Cost Savings",
+      description:
+        "Our solution is built to help you save money. By streamlining your return processes, reducing errors, and optimizing resource allocation, we help you minimize costs associated with returns, ultimately improving your bottom line.",
+    },
+    {
+      // image: fuel,
+      title: "Environmental Responsibility",
+      description:
+        "We believe in sustainability. By digitizing and automating the return process, we contribute to reducing paper waste and unnecessary transportation, making a positive impact on the environment",
+    },
+    {
+      // image: integration,
+      title: "Dedicated Support",
+      description:
+        "We are committed to your success. Our team of dedicated experts is always ready to assist you, providing exceptional customer support and guidance throughout your journey with our return management system.",
+    },
+  ];
+
   const [activeJourney, setActiveJourney] = useState<Number>(1);
 
   return (
@@ -89,6 +131,7 @@ export default function Plan() {
           Effortless <span>Return</span> Is Just Start Of Retention.
         </h1>
       </div>
+
       <div className={` ${styles.SubTitle} col-12 py-5`}>
         <p className={`${styles.SubTitleText} col-10 col-lg-10 col-xxl-5`}>
           Say goodbye to complicated return procedures <br /> with our
@@ -164,12 +207,12 @@ export default function Plan() {
 
       <div className={`${styles.explore}`}>Explore Your Journey</div>
 
-      <div className={`${styles} row text-center m-0 p-0`}>
+      <div className={`${styles} row text-center m-0 p-0 justify-content-center`}>
         {/*  customer */}
 
         {activeJourney === 1 && (
           <>
-            <div className={` ${styles} col-9 col-sm-6 p-0 `}>
+            <div className={` ${styles} col-9 col-sm-6 col-lg-5 p-0`}>
               <section
                 onClick={() => setActiveJourney(1)}
                 className={`${styles.customerBox_1} mx-auto `}
@@ -192,9 +235,7 @@ export default function Plan() {
 
               {activeJourney === 1 && (
                 <>
-                  <section
-                    className={` ${styles.leftCustomer} d-none d-sm-inline`}
-                  >
+                  <section className={` ${styles.leftCustomer} d-none d-lg-inline`}>
                     <Image src={leftCustomer} alt="customer" />
                   </section>
                 </>
@@ -205,7 +246,7 @@ export default function Plan() {
 
         {activeJourney === 2 && (
           <>
-            <div className={`${styles} col-3 col-sm-6 p-0 `}>
+            <div className={`${styles} col-3 col-sm-6 p-0 col-lg-5 p-0`}>
               <section
                 onClick={() => setActiveJourney(1)}
                 className={`${styles.customerBox_2} mx-auto`}
@@ -228,9 +269,7 @@ export default function Plan() {
 
               {activeJourney === 1 && (
                 <>
-                  <section
-                    className={` ${styles.leftCustomer} d-none d-sm-inline`}
-                  >
+                  <section className={` ${styles.leftCustomer} d-none d-lg-inline`}>
                     <Image src={leftCustomer} alt="customer" />
                   </section>
                 </>
@@ -243,7 +282,7 @@ export default function Plan() {
 
         {activeJourney === 1 && (
           <>
-            <div className={`${styles.buttonBox} col-3 col-sm-6 p-0 `}>
+            <div className={`${styles.buttonBox} col-3 col-sm-6 col-lg-5 p-0 `}>
               <section
                 onClick={() => setActiveJourney(2)}
                 className={`${styles.businessBox_1} mx-auto`}
@@ -254,26 +293,18 @@ export default function Plan() {
                     alt="businessIcon"
                     className="d-none d-sm-inline"
                   />
-                  <Image
-                    src={businessIcon_Blue_Mobile}
+                  <Image src={businessIcon_Blue_Mobile}
                     alt="businessIcon"
                     className="d-sm-none"
                   />
                 </section>
 
-                <h2
-                  className={`${styles.businessBlue}  m-0 d-none d-sm-inline`}
-                >
-                  {" "}
-                  BUSINESS{" "}
-                </h2>
+                <h2 className={`${styles.businessBlue}  m-0 d-none d-sm-inline`}>BUSINESS</h2>
               </section>
 
               {activeJourney === 2 && (
                 <>
-                  <section
-                    className={` ${styles.rightBusiness} d-none d-sm-inline `}
-                  >
+                  <section className={` ${styles.rightBusiness} d-none d-lg-inline `}>
                     <Image src={rightBusiness} alt="Business" />
                   </section>
                 </>
@@ -284,7 +315,7 @@ export default function Plan() {
 
         {activeJourney === 2 && (
           <>
-            <div className={`${styles.buttonBox} col-9 col-sm-6 p-0 `}>
+            <div className={`${styles.buttonBox} col-9 col-sm-6 col-lg-5 p-0 `}>
               <section
                 onClick={() => setActiveJourney(2)}
                 className={`${styles.businessBox_2} mx-auto`}
@@ -312,9 +343,7 @@ export default function Plan() {
 
               {activeJourney === 2 && (
                 <>
-                  <section
-                    className={` ${styles.rightBusiness} d-none d-sm-inline `}
-                  >
+                  <section className={` ${styles.rightBusiness} d-none d-lg-inline `} >
                     <Image src={rightBusiness} alt="Business" />
                   </section>
                 </>
@@ -444,60 +473,78 @@ export default function Plan() {
 
       {activeJourney === 2 && (
         <>
+          
           {/* 1 */}
-          <div
-            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
-          >
-            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
-              <h2 className={`${styles.oneTitleBusiness} my-5`}>
-                No need more <br /> than an emaiL...
-              </h2>
 
-              <p className={`${styles.oneCommentBusiness} d-flex`}>
-                Customers have the ability to initiate a return <br /> at any
-                time and in a convenient manner. All the <br /> thing that
-                customers need to do their return is <br /> an email that they
-                use when they shop.
-              </p>
-            </div>
+          <div className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`}>
 
             <div
-              className="p-0 d-none d-lg-inline"
-              style={{
-                width: "auto",
-                position: "relative",
-                bottom: "121px",
-                left: "48px",
-              }}
-            >
-              <div className="">
-                <Image
-                  src={centerLine_Rightcurve}
-                  alt="centerLinecurve"
-                ></Image>
+              className={`${styles.manageReturns} text-center mt-5 mt-lg-0 col-md-12 col-lg-5 p-0`}
+              // style={{display: "grid",justifyContent: "center",height: "fit-content",}}
+              >
+             
+              <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
+                Unlock Efficiency with Automation:
+              </h2>
+
+              <ul className={`${styles.ulList} my_container mx-sm-0`}>
+                <li>Enhance Customer Support with Collaborative Return Ticketing</li>
+                <li>Monitor Return Shipping Status with Ease</li>
+                <li>Access Customer Information and History in One Place</li>
+              </ul>
+
+              <div className="d-none d-sm-flex justify-content-center justify-content-sm-start my_container mx-sm-0" style={{ alignItems: "center" }} >
+
+                <h3 className="" style={{ paddingRight: "20px" }} >Explore More</h3>
+
+                <a href="#" className="">
+                  <Image src={arrowButton} alt="arrowButton" style={{ width: "46.75px", height: "46.75px" }} />
+                </a>
+
               </div>
 
-              <div
-                className={`${styles.center_Icon_Box}`}
-                style={{ right: "22px" }}
-                // style={{ display: "flex", justifyContent: "center", position: "relative", bottom: "35px", right: "0.5px", }}
-              >
+            </div>
+
+            {/*  */}
+            <div className="p-0 d-none d-lg-inline" 
+             style={{width: "auto", position: "relative",bottom: "121px",left: "48px", }} >
+
+              <div className="">
+                <Image src={centerLine_Rightcurve} alt="centerLinecurve"></Image>
+              </div>
+
+              <div className={`${styles.center_Icon_Box}`} style={{ right: "22px" }}>
                 <h3 className="m-0 ">1</h3>
               </div>
             </div>
 
-            <div
-              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
-            >
+            <div className={`${styles.exchange} col-md-12 col-lg-5 text-center my-4 my-lg-0`}>
               <Image src={exchange} alt="exchange"></Image>
             </div>
+
+            <div className="d-flex d-sm-none justify-content-center m-0 p-0"
+            style={{ alignItems: "center" , width: "197.215px",height: "46.75px",
+            border:"2px solid #EF4EE8" ,borderRadius:"25px"
+             }} >
+
+              <a href="#" className=""
+              style={{height:"auto" , display:"flex" ,justifyContent:"center",
+              alignItems:"center" ,textDecoration:"none", color:"black"}}>
+                <h3 className={`${styles.exploreMore} m-0`}
+                style={{ paddingRight: "20px" , position:"absolute"}} >Explore More</h3>
+                {/* <Image src={arrowBoxMobile} alt="arrowButton" style={{ width: "auto", height: "13vw" }} /> */}
+              </a>
+
+            </div>
+
           </div>
 
           {/* 2 */}
+
           <div
-            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center flex-md-row-reverse`}
+            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center mt-3 mb-5`}
           >
-            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
+            {/* <div className={`${styles} col-md-12 col-lg-5 p-0`}>
               <h2 className={`${styles.oneTitleBusiness} my-5`}>
                 No need more <br /> than an emaiL...
               </h2>
@@ -508,6 +555,51 @@ export default function Plan() {
                 customers need to do their return is <br /> an email that they
                 use when they shop.
               </p>
+            </div> */}
+
+            {/* <div className={`${styles.manageReturns} mx-auto text-center mt-5 mt-lg-0 col-md-12 col-lg-5 p-0`} >
+             
+             <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
+               Unlock Efficiency with Automation:
+             </h2>
+
+             <ul className={`${styles.ulList}`}>
+               <li>Enhance Customer Support with Collaborative Return Ticketing</li>
+               <li>Monitor Return Shipping Status with Ease</li>
+               <li>Access Customer Information and History in One Place</li>
+             </ul>
+
+             <div className="" style={{ display: "flex", alignItems: "center" }}>
+               <h3 style={{ paddingRight: "20px" }}>Explore More</h3>
+               <a href="#"> <Image src={arrowButton} alt="arrowButton" style={{ width: "46.75px", height: "46.75px" }} /> </a>
+             </div>
+
+           </div> */}
+
+            <div className={`${styles.manageReturns} text-center mt-5 mt-lg-0 col-md-12 col-lg-5 p-0`}
+              style={{ display: "grid", justifyContent: "center", height: "fit-content", }} >
+              
+              <h2 className={`${styles.oneTitle} d-flex d-lg-block`}> Unlock Efficiency with Automation: </h2>
+
+              <ul className={`${styles.ulList} my_container mx-sm-0 `}>
+                <li>
+                  Enhance Customer Support with Collaborative Return Ticketing
+                </li>
+                <li>Monitor Return Shipping Status with Ease</li>
+                <li>Access Customer Information and History in One Place</li>
+              </ul>
+
+              <div className="d-none d-sm-flex justify-content-center justify-content-sm-start my_container mx-sm-0"
+              style={{ alignItems: "center" }} >
+
+                <h3 className="" style={{ paddingRight: "20px" }} >Explore More</h3>
+
+                <a href="#" className="">
+                  <Image src={arrowButton} alt="arrowButton" style={{ width: "46.75px", height: "46.75px" }} />
+                </a>
+
+              </div>
+
             </div>
 
             <div
@@ -526,94 +618,258 @@ export default function Plan() {
               </div>
             </div>
 
-            <div
-              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
-            >
+            <div className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`} >
               <Image src={exchange} alt="exchange"></Image>
             </div>
+
+            <div className="d-flex d-sm-none justify-content-center mx-0 mt-4 p-0"
+            style={{ alignItems: "center" , width: "197.215px",height: "46.75px",
+            border:"2px solid #EF4EE8" ,borderRadius:"25px"}} >
+
+              {/* <a href="#" className="" style={{height:"auto" , display:"flex" , justifyContent:"center",alignItems:"center" , textDecoration:"none" , color:"black"}}>
+                <h3 className="m-0" style={{ paddingRight: "20px" , position:"absolute"}} >Explore More</h3>
+                  <Image src={arrowBoxMobile} alt="arrowButton" style={{ width: "auto", height: "13vw" }} />
+              </a> */}
+
+              <a href="#" className="" 
+              style={{height:"auto" , display:"flex" , justifyContent:"center",
+              alignItems:"center" , textDecoration:"none" , color:"black"}}>
+                <h3 className={`${styles.exploreMore} m-0`}
+                style={{ paddingRight: "20px" , position:"absolute"}} >Explore More</h3>
+                {/* <Image src={arrowBoxMobile} alt="arrowButton" style={{ width: "auto", height: "13vw" }} /> */}
+              </a>
+
+              </div>
+          
           </div>
+
           {/* 3 */}
-          <div
-            className={` ${styles.CenterMain} ${styles.firstRow} row mx-0 p-0 justify-content-center `}
-          >
-            <div className={`${styles} col-md-12 col-lg-5 p-0`}>
-              <h2 className={`${styles.oneTitleBusiness} my-5`}>
-                No need more <br /> than an emaiL...
-              </h2>
 
-              <p className={`${styles.oneCommentBusiness} d-flex`}>
-                Customers have the ability to initiate a return <br /> at any
-                time and in a convenient manner. All the <br /> thing that
-                customers need to do their return is <br /> an email that they
-                use when they shop.
-              </p>
-            </div>
 
-            <div
-              className={`${styles.center_Box_business} p-0 d-none d-lg-inline`}
-            >
-              <div className="">
-                <Image src={centerLine_Curve3} alt="centerLinecurve"></Image>
+
+          {/* 4 */}
+
+
+          {/* 5 */}
+
+
+
+          {/*  */}
+          {/*  */}
+
+          {/* {activeJourney === 2 && (
+            <>
+              <div className={` ${styles.CenterMain} ${styles.firstRow} ${styles.row} col-12 d-md-flex p-0`} >
+                <div className={`${styles} mx-auto `} style={{ visibility: "hidden" }} ></div>
+
+                <div className={`${styles.manageReturns} mx-auto text-center mt-5 mt-lg-0`} >
+                  <h2 className={`${styles.oneTitle} d-flex d-lg-block`}> Unlock Efficiency with Automation: </h2>
+
+                  <ul className={`${styles.ulList}`}>
+                    <li> Enhance Customer Support with Collaborative Return Ticketing </li>
+                    <li>Monitor Return Shipping Status with Ease</li>
+                    <li> Access Customer Information and History in One Place </li>
+                  </ul>
+
+                  <div className="" style={{ display: "flex", alignItems: "center" }} >
+                    <h3 style={{ paddingRight: "20px" }}>Explore More</h3>
+                    <a href="#">
+                      <Image src={arrowButton} alt="arrowButton" style={{ width: "46.75px", height: "46.75px" }} />
+                    </a>
+                  </div>
+
+                </div>
+
               </div>
 
-              <div className={`${styles.center_Icon_Box_business}`}>
-                <h3 className="m-0 ">3</h3>
-              </div>
-            </div>
+              <div className={` ${styles.CenterMain} ${styles.payment} ${styles.marginTop} col-12 d-lg-flex p-0 `} >
+                <div className={`${styles} mx-auto `}>
+                  <h2 className={`${styles.twoTitle_new}`}> Smooth Return Experience </h2>
 
-            <div
-              className={`${styles.exchange} col-md-12 col-lg-5 text-center mt-5 mt-lg-0`}
-            >
-              <Image src={exchange} alt="exchange"></Image>
-            </div>
-          </div>
+                  <ul className={`${styles.ulList}`}>
+                    <li> Create a Smooth Return Experience - a seamless path for your customer to return product </li>
+                    <li> Decide when to charge shipping for returns. You can improve retention by simply charging for refunds and not for store credit. </li>
+                  </ul>
+
+                  <div className="" style={{ display: "flex", alignItems: "center" }} >
+                    <h3 style={{ paddingRight: "20px" }}>Explore More</h3>
+                    <a href="#">
+                      <Image src={arrowButton} alt="arrowButton" style={{ width: "46.75px", height: "46.75px" }} />
+                    </a>
+                  </div>
+
+                </div>
+
+                <div className={`${styles.paymentImg} mx-auto d-flex mt-5 mt-lg-0`} style={{ visibility: "hidden" }} ></div>
+
+              </div>
+
+              <div
+                className={` ${styles.CenterMain} ${styles.firstRow} ${styles.row} col-12 d-md-flex p-0`}
+              >
+                <div
+                  className={`${styles} mx-auto `}
+                  style={{ visibility: "hidden" }}
+                ></div>
+
+                <div
+                  className={`${styles.manageReturns} mx-auto text-center mt-5 mt-lg-0`}
+                >
+                  <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
+                    Unlock Efficiency with Automation:
+                  </h2>
+
+                  <ul className={`${styles.ulList}`}>
+                    <li>
+                      Enhance Customer Support with Collaborative Return
+                      Ticketing
+                    </li>
+                    <li>Monitor Return Shipping Status with Ease</li>
+                    <li>
+                      Access Customer Information and History in One Place
+                    </li>
+                  </ul>
+
+                  <div
+                    className=""
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <h3 style={{ paddingRight: "20px" }}>Explore More</h3>
+                    <a href="#">
+                      <Image
+                        src={arrowButton}
+                        alt="arrowButton"
+                        style={{ width: "46.75px", height: "46.75px" }}
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className={` ${styles.CenterMain} ${styles.payment} ${styles.marginTop} col-12 d-lg-flex p-0 `}
+              >
+                <div className={`${styles} mx-auto `}>
+                  <h2 className={`${styles.twoTitle_new}`}>
+                    Smooth Return Experience
+                  </h2>
+
+                  <ul className={`${styles.ulList}`}>
+                    <li>
+                      Create a Smooth Return Experience - a seamless path for
+                      your customer to return product
+                    </li>
+
+                    <li>
+                      Decide when to charge shipping for returns. You can
+                      improve retention by simply charging for refunds and not
+                      for store credit.
+                    </li>
+                  </ul>
+                  <div
+                    className=""
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <h3 style={{ paddingRight: "20px" }}>Explore More</h3>
+                    <a href="#">
+                      <Image
+                        src={arrowButton}
+                        alt="arrowButton"
+                        style={{ width: "46.75px", height: "46.75px" }}
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  className={`${styles.paymentImg} mx-auto d-flex mt-5 mt-lg-0`}
+                  style={{ visibility: "hidden" }}
+                ></div>
+              </div>
+
+              <div
+                className={` ${styles.CenterMain} ${styles.firstRow} ${styles.row} col-12 d-md-flex p-0`}
+              >
+                <div
+                  className={`${styles} mx-auto `}
+                  style={{ visibility: "hidden" }}
+                ></div>
+
+                <div
+                  className={`${styles.manageReturns} mx-auto text-center mt-5 mt-lg-0`}
+                >
+                  <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
+                    Unlock Efficiency with Automation:
+                  </h2>
+
+                  <ul className={`${styles.ulList}`}>
+                    <li>
+                      Enhance Customer Support with Collaborative Return
+                      Ticketing
+                    </li>
+                    <li>Monitor Return Shipping Status with Ease</li>
+                    <li>
+                      Access Customer Information and History in One Place
+                    </li>
+                  </ul>
+
+                  <div
+                    className=""
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <h3 style={{ paddingRight: "20px" }}>Explore More</h3>
+                    <a href="#">
+                      <Image
+                        src={arrowButton}
+                        alt="arrowButton"
+                        style={{ width: "46.75px", height: "46.75px" }}
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </>
+          )} */}
+
+          {/*  */}
+          {/*  */}
         </>
       )}
+      {/*  */}
+      {/*  */}
 
       {/* {activeJourney === 2 && (
         <>
-          <div
-            className={` ${styles.CenterMain} ${styles.firstRow} ${styles.row} col-12 d-md-flex p-0`}
-          >
-            <div
-              className={`${styles} mx-auto `}
-              style={{ visibility: "hidden" }}
-            ></div>
+          <div className={` ${styles.CenterMain} ${styles.firstRow} ${styles.row} col-12 d-md-flex p-0`} >
 
-            <div
-              className={`${styles.manageReturns} mx-auto text-center mt-5 mt-lg-0`}
-            >
+            <div className={`${styles} mx-auto `} style={{ visibility: "hidden" }} ></div>
+
+
+            <div className={`${styles.manageReturns} mx-auto text-center mt-5 mt-lg-0`} >
+             
               <h2 className={`${styles.oneTitle} d-flex d-lg-block`}>
                 Unlock Efficiency with Automation:
               </h2>
 
               <ul className={`${styles.ulList}`}>
-                <li>
-                  Enhance Customer Support with Collaborative Return Ticketing
-                </li>
+                <li>Enhance Customer Support with Collaborative Return Ticketing</li>
                 <li>Monitor Return Shipping Status with Ease</li>
                 <li>Access Customer Information and History in One Place</li>
               </ul>
 
-              <div
-                className=""
-                style={{ display: "flex", alignItems: "center" }}
-              >
+              <div className="" style={{ display: "flex", alignItems: "center" }}>
                 <h3 style={{ paddingRight: "20px" }}>Explore More</h3>
                 <a href="#">
-                  <Image
-                    src={arrowButton}
-                    alt="arrowButton"
-                    style={{ width: "46.75px", height: "46.75px" }}
-                  />
+                  <Image src={arrowButton} alt="arrowButton"
+                     style={{ width: "46.75px", height: "46.75px" }} />
                 </a>
               </div>
+
             </div>
+
           </div>
 
-          <div
-            className={` ${styles.CenterMain} ${styles.payment} ${styles.marginTop} col-12 d-lg-flex p-0 `}
-          >
+          <div className={` ${styles.CenterMain} ${styles.payment} ${styles.marginTop} col-12 d-lg-flex p-0 `} >
             <div className={`${styles} mx-auto `}>
               <h2 className={`${styles.twoTitle_new}`}>
                 Smooth Return Experience
@@ -772,6 +1028,9 @@ export default function Plan() {
           </div>
         </>
       )} */}
+
+      {/*  */}
+      {/*  */}
     </div>
   );
 }
